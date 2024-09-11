@@ -1,0 +1,247 @@
+@prefix : <http://www.semanticweb.org/it2529/ontologies/2024/6/untitled-ontology-52#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/it2529/ontologies/2024/6/untitled-ontology-52> .
+
+<http://www.semanticweb.org/it2529/ontologies/2024/6/untitled-ontology-52> rdf:type owl:Ontology ;
+                                                                            owl:imports <http://www.w3.org/ns/prov-o-20130430> ,
+                                                                                        <https://w3id.org/okn/o/sd/1.4.0> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/okn/o/sd#compatibleVisualisationSoftware
+<https://w3id.org/okn/o/sd#compatibleVisualisationSoftware> rdf:type owl:ObjectProperty ;
+                                                            rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  https://w3id.org/okn/o/sd#hasSampleVisualization
+<https://w3id.org/okn/o/sd#hasSampleVisualization> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf owl:topObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://schema.org/Dataset
+<https://schema.org/Dataset> rdf:type owl:Class .
+
+
+###  https://w3id.org/muhai/class/DescriptiveMemory
+<https://w3id.org/muhai/class/DescriptiveMemory> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> .
+
+
+###  https://w3id.org/muhai/class/Experience-and-data
+<https://w3id.org/muhai/class/Experience-and-data> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> .
+
+
+###  https://w3id.org/muhai/class/SymbolicStructure
+<https://w3id.org/muhai/class/SymbolicStructure> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> .
+
+
+###  https://w3id.org/okn/o/sd#Software
+<https://w3id.org/okn/o/sd#Software> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://www.w3.org/ns/prov#SoftwareAgent> .
+
+
+###  https://w3id.org/okn/o/sd#SourceCode
+<https://w3id.org/okn/o/sd#SourceCode> rdf:type owl:Class .
+
+
+###  https://w3id.org/okn/o/sd#Visualization
+<https://w3id.org/okn/o/sd#Visualization> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.w3.org/ns/prov#EmptyCollection
+<http://www.w3.org/ns/prov#EmptyCollection> rdf:type <https://w3id.org/muhai/class/Experience-and-data> .
+
+
+###  https://w3id.org/muhai/data/AbeSim
+<https://w3id.org/muhai/data/AbeSim> rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/okn/o/sd#Software> ;
+                                     <http://www.w3.org/ns/prov#wasDerivedFrom> <https://w3id.org/muhai/data/SOMA-model> ;
+                                     <https://w3id.org/okn/o/sd#compatibleVisualisationSoftware> <https://w3id.org/muhai/data/VirtualRealityInterfaceForAbeSim> .
+
+
+###  https://w3id.org/muhai/data/BenchmarkEvaluationScripts
+<https://w3id.org/muhai/data/BenchmarkEvaluationScripts> rdf:type owl:NamedIndividual ,
+                                                                  <https://w3id.org/okn/o/sd#SourceCode> .
+
+
+###  https://w3id.org/muhai/data/Chronographer
+<https://w3id.org/muhai/data/Chronographer> rdf:type owl:NamedIndividual ,
+                                                     <https://w3id.org/okn/o/sd#Software> .
+
+
+###  https://w3id.org/muhai/data/CodeForMiraKG
+<https://w3id.org/muhai/data/CodeForMiraKG> rdf:type owl:NamedIndividual ,
+                                                     <https://w3id.org/okn/o/sd#SourceCode> ;
+                                            <http://www.w3.org/ns/prov#wasDerivedFrom> <https://w3id.org/muhai/data/MiraOntology> .
+
+
+###  https://w3id.org/muhai/data/CodeForOKG
+<https://w3id.org/muhai/data/CodeForOKG> rdf:type owl:NamedIndividual ,
+                                                  <https://w3id.org/okn/o/sd#SourceCode> ;
+                                         <http://www.w3.org/ns/prov#wasDerivedFrom> <https://w3id.org/muhai/data/ObservatoryIntegratedOntology> .
+
+
+###  https://w3id.org/muhai/data/FluidConstructionGrammar
+<https://w3id.org/muhai/data/FluidConstructionGrammar> rdf:type owl:NamedIndividual ,
+                                                                <https://schema.org/Dataset> ,
+                                                                <https://w3id.org/muhai/class/SymbolicStructure> .
+
+
+###  https://w3id.org/muhai/data/FluidConstructionGrammarEditor
+<https://w3id.org/muhai/data/FluidConstructionGrammarEditor> rdf:type owl:NamedIndividual ,
+                                                                      <https://w3id.org/okn/o/sd#Software> ;
+                                                             <http://www.w3.org/ns/prov#wasDerivedFrom> <https://w3id.org/muhai/data/FluidConstructionGrammar> .
+
+
+###  https://w3id.org/muhai/data/FrenchRevolutionNarratives
+<https://w3id.org/muhai/data/FrenchRevolutionNarratives> rdf:type owl:NamedIndividual ,
+                                                                  <https://schema.org/Dataset> ,
+                                                                  <https://w3id.org/muhai/class/DescriptiveMemory> ;
+                                                         <http://www.w3.org/ns/prov#wasGeneratedBy> <https://w3id.org/muhai/data/Chronographer> .
+
+
+###  https://w3id.org/muhai/data/Hermione
+<https://w3id.org/muhai/data/Hermione> rdf:type owl:NamedIndividual ,
+                                                <https://w3id.org/okn/o/sd#Software> ;
+                                       <http://www.w3.org/ns/prov#wasDerivedFrom> <https://w3id.org/muhai/data/ObservatoryIntegratedOntology> .
+
+
+###  https://w3id.org/muhai/data/IngredientSubstitution
+<https://w3id.org/muhai/data/IngredientSubstitution> rdf:type owl:NamedIndividual ,
+                                                              <https://w3id.org/okn/o/sd#Software> ;
+                                                     <https://w3id.org/okn/o/sd#compatibleVisualisationSoftware> <https://w3id.org/muhai/data/VirtualRealityInterfaceForAbeSim> ;
+                                                     <https://w3id.org/okn/o/sd#hasSampleVisualization> <https://w3id.org/muhai/data/IntegratedNarrativeNetwork> .
+
+
+###  https://w3id.org/muhai/data/IntegratedNarrativeNetwork
+<https://w3id.org/muhai/data/IntegratedNarrativeNetwork> rdf:type owl:NamedIndividual ,
+                                                                  <https://w3id.org/okn/o/sd#Visualization> .
+
+
+###  https://w3id.org/muhai/data/LLM-and-KG-benchmark
+<https://w3id.org/muhai/data/LLM-and-KG-benchmark> rdf:type owl:NamedIndividual ,
+                                                            <https://schema.org/Dataset> ,
+                                                            <https://w3id.org/muhai/class/Experience-and-data> .
+
+
+###  https://w3id.org/muhai/data/MARL-LanguageGames
+<https://w3id.org/muhai/data/MARL-LanguageGames> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/muhai/data/MiraKnowledgeGraph
+<https://w3id.org/muhai/data/MiraKnowledgeGraph> rdf:type owl:NamedIndividual ,
+                                                          <https://schema.org/Dataset> ,
+                                                          <https://w3id.org/muhai/class/DescriptiveMemory> ;
+                                                 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://w3id.org/muhai/data/MiraOntology> ;
+                                                 <http://www.w3.org/ns/prov#wasGeneratedBy> <https://w3id.org/muhai/data/CodeForMiraKG> .
+
+
+###  https://w3id.org/muhai/data/MiraOntology
+<https://w3id.org/muhai/data/MiraOntology> rdf:type owl:NamedIndividual ,
+                                                    <https://schema.org/Dataset> .
+
+
+###  https://w3id.org/muhai/data/NeSyProceduralSemanticsForVisualDialogue
+<https://w3id.org/muhai/data/NeSyProceduralSemanticsForVisualDialogue> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/muhai/data/ObservatoryIntegratedOntology
+<https://w3id.org/muhai/data/ObservatoryIntegratedOntology> rdf:type owl:NamedIndividual ,
+                                                                     <https://schema.org/Dataset> ,
+                                                                     <https://w3id.org/muhai/class/SymbolicStructure> .
+
+
+###  https://w3id.org/muhai/data/ObservatoryKnowledgeGraph
+<https://w3id.org/muhai/data/ObservatoryKnowledgeGraph> rdf:type owl:NamedIndividual ,
+                                                                 <https://schema.org/Dataset> ,
+                                                                 <https://w3id.org/muhai/class/SymbolicStructure> ;
+                                                        <http://www.w3.org/ns/prov#wasDerivedFrom> <https://w3id.org/muhai/data/ObservatoryIntegratedOntology> ;
+                                                        <http://www.w3.org/ns/prov#wasGeneratedBy> <https://w3id.org/muhai/data/CodeForOKG> .
+
+
+###  https://w3id.org/muhai/data/PICOExtractor
+<https://w3id.org/muhai/data/PICOExtractor> rdf:type owl:NamedIndividual ,
+                                                     <https://w3id.org/okn/o/sd#Software> ;
+                                            <http://www.w3.org/ns/prov#wasDerivedFrom> <https://w3id.org/muhai/data/FluidConstructionGrammar> ,
+                                                                                       <https://w3id.org/muhai/data/SemanticFrameExtractor> .
+
+
+###  https://w3id.org/muhai/data/PropBankGrammar
+<https://w3id.org/muhai/data/PropBankGrammar> rdf:type owl:NamedIndividual ,
+                                                       <https://schema.org/Dataset> ,
+                                                       <https://w3id.org/muhai/class/SymbolicStructure> .
+
+
+###  https://w3id.org/muhai/data/RecipeExecutionBenchmark
+<https://w3id.org/muhai/data/RecipeExecutionBenchmark> rdf:type owl:NamedIndividual ,
+                                                                <https://schema.org/Dataset> ,
+                                                                <https://w3id.org/muhai/class/Experience-and-data> .
+
+
+###  https://w3id.org/muhai/data/RecipeUnderstandingSystem
+<https://w3id.org/muhai/data/RecipeUnderstandingSystem> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.w3.org/ns/prov#Entity> ,
+                                                                 <https://w3id.org/okn/o/sd#Software> ;
+                                                        <http://www.w3.org/ns/prov#wasDerivedFrom> <https://w3id.org/muhai/data/AbeSim> ,
+                                                                                                   <https://w3id.org/muhai/data/SOMA-model> ;
+                                                        <https://w3id.org/okn/o/sd#compatibleVisualisationSoftware> <https://w3id.org/muhai/data/FluidConstructionGrammarEditor> .
+
+
+###  https://w3id.org/muhai/data/SOMA-model
+<https://w3id.org/muhai/data/SOMA-model> rdf:type owl:NamedIndividual ,
+                                                  <https://schema.org/Dataset> ,
+                                                  <https://w3id.org/muhai/class/SymbolicStructure> .
+
+
+###  https://w3id.org/muhai/data/SemanticFrameExtractor
+<https://w3id.org/muhai/data/SemanticFrameExtractor> rdf:type owl:NamedIndividual ,
+                                                              <https://w3id.org/okn/o/sd#Software> ;
+                                                     <http://www.w3.org/ns/prov#wasDerivedFrom> <https://w3id.org/muhai/data/PropBankGrammar> ;
+                                                     <https://w3id.org/okn/o/sd#compatibleVisualisationSoftware> <https://w3id.org/muhai/data/FluidConstructionGrammarEditor> .
+
+
+###  https://w3id.org/muhai/data/TaskOrientedUnderstandingFramework
+<https://w3id.org/muhai/data/TaskOrientedUnderstandingFramework> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/muhai/data/VirtualRealityInterfaceForAbeSim
+<https://w3id.org/muhai/data/VirtualRealityInterfaceForAbeSim> rdf:type owl:NamedIndividual ,
+                                                                        <https://w3id.org/okn/o/sd#Software> .
+
+
+###  https://w3id.org/muhai/data/analysis
+<https://w3id.org/muhai/data/analysis> rdf:type owl:NamedIndividual ,
+                                                <http://www.w3.org/ns/prov#Activity> ;
+                                       <http://www.w3.org/ns/prov#wasAssociatedWith> <https://w3id.org/muhai/data/CodeForMiraKG> ,
+                                                                                     <https://w3id.org/muhai/data/CodeForOKG> ,
+                                                                                     <https://w3id.org/muhai/data/SemanticFrameExtractor> .
+
+
+###  https://w3id.org/muhai/data/interpretation
+<https://w3id.org/muhai/data/interpretation> rdf:type owl:NamedIndividual ,
+                                                      <http://www.w3.org/ns/prov#Activity> ;
+                                             <http://www.w3.org/ns/prov#wasAssociatedWith> <https://w3id.org/muhai/data/AbeSim> ,
+                                                                                           <https://w3id.org/muhai/data/Chronographer> ,
+                                                                                           <https://w3id.org/muhai/data/Hermione> ,
+                                                                                           <https://w3id.org/muhai/data/IntegratedNarrativeNetwork> ,
+                                                                                           <https://w3id.org/muhai/data/RecipeUnderstandingSystem> ,
+                                                                                           <https://w3id.org/muhai/data/VirtualRealityInterfaceForAbeSim> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
