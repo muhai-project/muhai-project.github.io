@@ -1,9 +1,28 @@
 # Acknowledgement:
-This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement number 951846. We thank ...
+This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement number 951846. We thank Tobias Kuhn, Inès Blin and Frank van Harmelen for the insightful discussions that contributed to this work.
 # Application domain:
-The application domain of the repository. Current supported domains include: Computer vision, Graphs, Natural language processing, Reinforcement learning, Semantic web. Domains are not mutually exclusive.
+Graphs, Natural language processing, Semantic web.
 # Citation:
-Preferred citation as Bibtex, as the authors have stated in their readme file
+@InProceedings{10.1007/978-3-031-60635-9_12,
+author="Stork, Lise
+and Zijdeman, Richard L.
+and Tiddi, Ilaria
+and ten Teije, Annette",
+editor="Mero{\~{n}}o Pe{\~{n}}uela, Albert
+and Dimou, Anastasia
+and Troncy, Rapha{\"e}l
+and Hartig, Olaf
+and Acosta, Maribel
+and Alam, Mehwish
+and Paulheim, Heiko
+and Lisena, Pasquale",
+title="Enabling Social Demography Research Using Semantic Technologies",
+booktitle="The Semantic Web",
+year="2024",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="199--216",
+}
 # Code of Conduct:
 Link to the code of conduct of the project
 # Code repository:
