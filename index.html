@@ -79,7 +79,7 @@
 <div id='yasgui'>
   <!-- YASGUI embedded in an iframe -->
   <iframe
-    src="https://yasgui.triply.cc/#query=PREFIX%20prov%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0ASELECT%20*%20WHERE%20%7B%20%0A%20%20%3Factivity%20prov%3AwasAssociatedWith%20%3FsoftwareAgent%20.%20%0A%20%20%3Factivity%20prov%3Aused%20%3Chttps%3A%2F%2Fw3id.org%2Fokn%2Fi%2FSoftware%2Ffluid-construction-grammar%3E%0A%7D%20LIMIT%2010
+    src="https://yasgui.triply.cc/#query=PREFIX%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX%20prov%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0ASELECT%20*%20WHERE%20%7B%20%0A%20%20%3Factivity%20prov%3AwasAssociatedWith%20%3FsoftwareAgent%20.%20%0A%20%20%3Factivity%20prov%3Aused%20%3Chttps%3A%2F%2Fw3id.org%2Fokn%2Fi%2FSoftware%2Ffluid-construction-grammar%3E%20.%20%0A%20%20%3Factivity%20rdf%3Atype%20%3FactivityType%20.%20%0A%7D%20LIMIT%2010
 &endpoint=https%3A%2F%2Fapi.druid.datalegend.net%2Fdatasets%2Flisestork%2Fmuhai-canvas%2Fservices%2Fmuhai-canvas%2Fsparql"
     width="100%"
     height="600px"
