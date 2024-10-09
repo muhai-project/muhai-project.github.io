@@ -1,0 +1,51 @@
+@prefix ns1: <https://w3id.org/okn/o/sd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/okn/i/Agent/muhai-project> a schema:Organization ;
+    schema:name "muhai-project" .
+
+<https://w3id.org/okn/i/Software/understanding_ingredient_substitutions_book_chapter_code> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/understanding_ingredient_substitutions_book_chapter_code> ;
+    ns1:contactDetails """Nikolaos Kondylidis
+""" ;
+    ns1:dateCreated "2024-09-06T11:35:49+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-10-06T12:39:54+00:00"^^xsd:dateTime ;
+    ns1:description "14-07-2023",
+        """This code allows to replicate the experiments presented in the cpater "Understanding Ingredient Substitutions" of the Second Book of the MUHAI Project regarding understanding everyday activities.
+""",
+        """This repository contains the code surrounding Understanding Ingredient Substitution Experiments, in the context of an agent interacting with a human chef in order to learn how to perform ingredient substitution. 
+The code supports the exploration and use of the Recipe1M dataset and Recipe1Msubs benchmark.
+Additionally, it utilizes a GraphDB interface to query the FoodKG knowledge graph.
+They are all put together to create a grounded version of the Recipe1MSubs, where the data (recipes and ingredients) are defined in Internationalized Resource Identifiers (IRI)s.
+Moreover, the ignredients are related with FoodOn concepts, enabling the agent to develop and human-centric understanding of provided ingredient substitution examples.
+The experimental setup uses this produced grounded version of Recipe1MSubs, to test and evaluate different agent policies. 
+""" ;
+    ns1:hasAcknowledgments "This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement number 951846, the Vrije Universiteit Amsterdam and Bremen University. We thank Ilaria Tiddi, Annette ten Teije and Frank van Harmelen for their continuous support and guidance." ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code/releases"^^xsd:anyURI ;
+    ns1:hasExample "https://raw.githubusercontent.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code/master/.ipynb_checkpoints/USDA_exploration-checkpoint.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code/master/USDA_exploration.ipynb"^^xsd:anyURI ;
+    ns1:hasExecutableNotebook "https://raw.githubusercontent.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code/master/.ipynb_checkpoints/USDA_exploration-checkpoint.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code/master/USDA_exploration.ipynb" ;
+    ns1:hasInstallationInstructions """https://github.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code 
+""" ;
+    ns1:hasLongName "Acknowledgement" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/understanding_ingredient_substitutions_book_chapter_code> ;
+    ns1:hasSupportScriptLocation "https://raw.githubusercontent.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code/master/run_tensorboard.sh"^^xsd:anyURI ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/understanding_ingredient_substitutions_book_chapter_code/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/understanding_ingredient_substitutions_book_chapter_code" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code/master/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/understanding_ingredient_substitutions_book_chapter_code> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code/master/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/understanding_ingredient_substitutions_book_chapter_code> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code"^^xsd:anyURI ;
+    ns1:name "muhai-project/understanding_ingredient_substitutions_book_chapter_code" ;
+    ns1:programmingLanguage "Jupyter Notebook",
+        "Python",
+        "Shell" .
+

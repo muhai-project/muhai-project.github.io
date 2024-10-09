@@ -1,0 +1,96 @@
+@prefix ns1: <https://w3id.org/okn/o/sd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/okn/i/Agent/muhai-project> a schema:Organization ;
+    schema:name "muhai-project" .
+
+<https://w3id.org/okn/i/Software/shared_query_understanding> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/shared_query_understanding> ;
+    ns1:contactDetails "Nikolaos Kondylidis" ;
+    ns1:dateCreated "2023-09-15T14:06:39+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-12T08:07:42+00:00"^^xsd:dateTime ;
+    ns1:description "22-02-2023",
+        """This is the code for the paper accepted for publication to AAMAS 2023: "Establishing Shared Query Understanding in an Open Multi-Agent System".
+The experimental setup allows the development and evaluation of agent policies, that attempt to explain a query term to each other, over grounded communication.""",
+        """This repository contains the code for reproducing the experimental results presented in the paper 
+[Optional] Replicating the data pre-processing: 
+The directory "dataset" already contains all preprocessed data needed to run the experiments. In case you want to replicate that process as well, you need to follow the next steps before running the experiments: 
+We do this because we RDFLib for our experiments which does not provide reasoning tools.
+We performed this step manually using Protégé, (https://protege.stanford.edu/), and unfortunately we do not provide some straightforward command lines to replicate it.
+You can by-pass this step by copying our provided and execute: 
+We need to create more instance alignments across pairs of ontologies in order to perform more experiments using more provided concept alignments. To do so, please execute: 
+""" ;
+    ns1:hasAcknowledgments "This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement number 951846, the Vrije Universiteit Amsterdam. We want to thank Frank van Harmelen for his continuous support and guidance." ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/shared_query_understanding/releases"^^xsd:anyURI ;
+    ns1:hasExecutableInstructions """i) Create the dataset directory: 
+    mkdir dataset
+ 
+ii) Download and unzip the original OA4QA track dataset (http://oaei.ontologymatching.org/2015/oa4qa/index.html):
+ 
+    wget http://oaei.ontologymatching.org/2015/oa4qa/oaei2015_oa4qa_bundle.zip
+    mv oaei2015_oa4qa_bundle.zip data_preparation/oaei2015_oa4qa_bundle.zip
+    unzip data_preparation/oaei2015_oa4qa_bundle.zip -d data_preparation/
+    
+iii) Translate their provided concept alignments to RDF OWL 
+    python3 generate_instance_alignments_for_extended_dataset.py 
+""" ;
+    ns1:hasExecutionCommand """i) Create the dataset directory: 
+    mkdir dataset
+ 
+ii) Download and unzip the original OA4QA track dataset (http://oaei.ontologymatching.org/2015/oa4qa/index.html):
+ 
+    wget http://oaei.ontologymatching.org/2015/oa4qa/oaei2015_oa4qa_bundle.zip
+    mv oaei2015_oa4qa_bundle.zip data_preparation/oaei2015_oa4qa_bundle.zip
+    unzip data_preparation/oaei2015_oa4qa_bundle.zip -d data_preparation/
+    
+iii) Translate their provided concept alignments to RDF OWL 
+    python3 generate_instance_alignments_for_extended_dataset.py 
+""" ;
+    ns1:hasInstallationInstructions """To replicate the experiment results you need to first clone this repository and then "move" to that directory, by executing: 
+    git clone https://github.com/kondilidisn/shared_query_understanding
+    cd shared_query_understanding 
+You can create a new python environment and install all libraries mentioned in requirements.txt by executing: 
+    python3 -m venv venv/
+    source venv/bin/activate
+    pip3 install -r requirements.txt 
+The directory "dataset" already contains all preprocessed data needed to run the experiments. In case you want to replicate that process as well, you need to follow the next steps before running the experiments: 
+    mkdir dataset
+ 
+ii) Download and unzip the original OA4QA track dataset (http://oaei.ontologymatching.org/2015/oa4qa/index.html):
+ 
+    wget http://oaei.ontologymatching.org/2015/oa4qa/oaei2015_oa4qa_bundle.zip
+    mv oaei2015_oa4qa_bundle.zip data_preparation/oaei2015_oa4qa_bundle.zip
+    unzip data_preparation/oaei2015_oa4qa_bundle.zip -d data_preparation/
+    
+iii) Translate their provided concept alignments to RDF OWL 
+We do this because we RDFLib for our experiments which does not provide reasoning tools.
+We performed this step manually using Protégé, (https://protege.stanford.edu/), and unfortunately we do not provide some straightforward command lines to replicate it.
+You can by-pass this step by copying our provided and execute: 
+    mkdir dataset/reasoned_ontologies
+    cp -r data_preparation/reasoned_ontologies/ dataset/reasoned_ontologies/
+    
+v) Create Instance Alignments for extended dataset experiments. 
+    python3 generate_instance_alignments_for_extended_dataset.py 
+""",
+        """https://arxiv.org/abs/2305.09349, https://dl-acm-org.vu-nl.idm.oclc.org/doi/10.5555/3545946.3598649 
+""",
+        """https://github.com/muhai-project/shared_query_understanding 
+""" ;
+    ns1:hasLongName "Acknowledgement:" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/shared_query_understanding> ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/shared_query_understanding/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/shared_query_understanding" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/shared_query_understanding/main/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/shared_query_understanding> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/shared_query_understanding/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/shared_query_understanding> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/shared_query_understanding"^^xsd:anyURI ;
+    ns1:name "muhai-project/shared_query_understanding" ;
+    ns1:programmingLanguage "Python" .
+

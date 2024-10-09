@@ -1,0 +1,109 @@
+@prefix ns1: <https://w3id.org/okn/o/sd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/okn/i/Agent/muhai-project> a schema:Organization ;
+    schema:name "muhai-project" .
+
+<https://w3id.org/okn/i/Software/french_rev_narratives_code> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/french_rev_narratives_code> ;
+    ns1:contactDetails "Inès Blin" ;
+    ns1:dateCreated "2024-07-22T15:00:05+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-13T08:20:57+00:00"^^xsd:dateTime ;
+    ns1:description """  Streamlit web application to collect data and build networks. 
+    Used for the pilot: mapping Wikidata/Wikipedia, extracting infoboxes and text from Wikipedia 
+""",
+        "24-05-2022",
+        "Demonstration Paper Submitted at the Workshop on semantic techniques for narrative-based understanding",
+        "This projects aims to be a first prototype on narrative exploration. In particular, the focus of the study is the French Revolution. The idea is to explore events and participants throughout structured ([Wikidata](https://www.wikidata.org)) and unstructured ([Wikipedia](https://www.wikipedia.org)) data. Structured data can help better grasp the main entities, objects or events, while unstructured data like text can help make hypotheses on how events are linked." ;
+    ns1:hasAcknowledgments """The work reported in this paper was funded by the [European MUHAI project](https://muhai.org) from the  Horizon 2020 research and innovation  programme under grant number 951846 and the Sony Computer Science Laboratories Paris.
+This work is also the result of a joint collaboration between the following partners in the project: [Sony CSL Paris](https://csl.sony.fr/project/building-narratives-computationally-from-knowledge-graphs/) & [Vrije Universiteit Amsterdam](https://krr.cs.vu.nl)""" ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/french_rev_narratives_code/releases"^^xsd:anyURI ;
+    ns1:hasExecutableInstructions """To run the streamlit app
+```bash
+cd app-demo && streamlit run app.py
+``` 
+""" ;
+    ns1:hasExecutionCommand """To run the streamlit app
+```bash
+cd app-demo && streamlit run app.py
+``` 
+""" ;
+    ns1:hasInstallationInstructions """  Module to build networks using networkx or pyvis. 
+""",
+        """##Installation instructions:
+If using https, run:
+```python
+git clone https://github.com/muhai-project/french_rev_narratives_code.git 
+cd french_rev_narratives_code
+```
+
+If using ssh, run:
+```python
+git clone git@github.com:muhai-project/french_rev_narratives_code.git
+cd french_rev_narratives_code
+```
+
+In the `settings` folder, create a `private.py`file and add the following paramters:
+* ROOT_PATH: root path to the project directory
+* AGENT: your user agent that you can find on the web.
+
+
+Version of Python used: 3.9.4
+
+Create a virtual env and activate it (example below with conda)
+```bash
+conda create -n <yourenvname> python=3.9.4
+conda activate <yourenvname>
+```
+
+```bash
+pip install -r requirements.txt
+```
+Then run the following:
+```bash
+python setup.py install
+```""",
+        """Building a French Revolution Narrative from Wikidata 
+""",
+        """Later when launching the app, you might encounter the following error:
+```bash
+ImportError: pycurl: libcurl link-time ssl backends (secure-transport, openssl) do not include compile-time ssl backend (none/other)
+``` 
+To prevent this error, and following [this link](https://stackoverflow.com/questions/21096436/ssl-backend-error-when-using-openssl), you can run the followings:
+```bash
+pip uninstall pycurl
+export PYCURL_SSL_LIBRARY=openssl
+pip install pycurl --no-cache-dir
+``` 
+""",
+        """To run the streamlit app
+```bash
+cd app-demo && streamlit run app.py
+``` 
+""",
+        """git@github.com:muhai-project/french_rev_narratives_code.git 
+""",
+        """https://github.com/SonyCSLParis/building-fr-narrative-from-wikidata-1/tree/main 
+""" ;
+    ns1:hasLongName "Narrative Prototype - The French Revolution" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/french_rev_narratives_code> ;
+    ns1:hasSupportScriptLocation "https://raw.githubusercontent.com/muhai-project/french_rev_narratives_code/main/clean.sh"^^xsd:anyURI ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/french_rev_narratives_code/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/french_rev_narratives_code" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/french_rev_narratives_code/main/README.md"^^xsd:anyURI ;
+    ns1:softwareRequirements "Cf. requirements.txt" .
+
+<https://w3id.org/okn/i/License/french_rev_narratives_code> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/GPL-3.0> ;
+    ns1:name "GNU General Public License v3.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/french_rev_narratives_code/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/french_rev_narratives_code> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/french_rev_narratives_code"^^xsd:anyURI ;
+    ns1:name "muhai-project/french_rev_narratives_code" ;
+    ns1:programmingLanguage "HTML",
+        "Python",
+        "Shell" .
+

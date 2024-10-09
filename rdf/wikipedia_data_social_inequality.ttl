@@ -1,0 +1,45 @@
+@prefix ns1: <https://w3id.org/okn/o/sd#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/okn/i/Agent/muhai-project> a schema:Organization ;
+    schema:name "muhai-project" .
+
+<https://w3id.org/okn/i/Software/wikipedia_data_social_inequality> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/wikipedia_data_social_inequality> ;
+    ns1:dateCreated "2022-05-24T12:10:41+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2022-05-24T12:42:36+00:00"^^xsd:dateTime ;
+    ns1:description """This repository contains all versions (until 01/02/2022) of the "social inequality" page from en.wikipedia.org to be used in the social inequality observatory of the [MUHAI](https://muhai.univiu.org/) project. 
+""",
+        "This repository contains all versions of the \"social inequality\" page from en.wikipedia.org" ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/wikipedia_data_social_inequality/releases"^^xsd:anyURI ;
+    ns1:hasLongName "wikipedia data from the social inequality page in english" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/wikipedia_data_social_inequality> ;
+    ns1:hasVersion <https://w3id.org/okn/i/Release/67659341> ;
+    ns1:identifier "https://sandbox.zenodo.org/badge/latestdoi/495807291"^^xsd:anyURI ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/wikipedia_data_social_inequality/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/wikipedia_data_social_inequality" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/wikipedia_data_social_inequality/main/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/Agent/carlosantagiustina> a schema:Person ;
+    schema:name "carlosantagiustina" .
+
+<https://w3id.org/okn/i/License/wikipedia_data_social_inequality> a schema:CreativeWork .
+
+<https://w3id.org/okn/i/Release/67659341> a ns1:SoftwareVersion ;
+    ns1:author <https://w3id.org/okn/i/Agent/carlosantagiustina> ;
+    ns1:dateCreated "2022-05-24T12:56:52+00:00"^^xsd:dateTime ;
+    ns1:datePublished "2022-05-24T12:57:40+00:00"^^xsd:dateTime ;
+    ns1:description "First release version of the dataset containing all versions of the \"social inequality\" page from en.wikipedia.org" ;
+    ns1:downloadUrl "https://api.github.com/repos/muhai-project/wikipedia_data_social_inequality/tarball/V1"^^xsd:anyURI,
+        "https://api.github.com/repos/muhai-project/wikipedia_data_social_inequality/zipball/V1"^^xsd:anyURI,
+        "https://github.com/muhai-project/wikipedia_data_social_inequality/releases/tag/V1"^^xsd:anyURI ;
+    ns1:hasVersionId "V1" ;
+    ns1:name "V1" ;
+    ns1:url "https://api.github.com/repos/muhai-project/wikipedia_data_social_inequality/releases/67659341"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/wikipedia_data_social_inequality> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/wikipedia_data_social_inequality"^^xsd:anyURI ;
+    ns1:name "muhai-project/wikipedia_data_social_inequality" ;
+    ns1:programmingLanguage "R" .
+

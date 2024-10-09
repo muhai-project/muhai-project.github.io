@@ -1,0 +1,67 @@
+@prefix ns1: <https://w3id.org/okn/o/sd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/okn/i/Agent/muhai-project> a schema:Organization ;
+    schema:name "muhai-project" .
+
+<https://w3id.org/okn/i/Software/python-kafka-example> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/python-kafka-example> ;
+    ns1:dateCreated "2021-01-19T22:03:26+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2021-01-19T23:40:47+00:00"^^xsd:dateTime ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/python-kafka-example/releases"^^xsd:anyURI ;
+    ns1:hasLongName "Apache Kafka example for Python" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/python-kafka-example> ;
+    ns1:hasUsageNotes """##Getting started
+Setup your free Apache Kafka instance here: https://www.cloudkarafka.com
+
+Configuration
+
+* `export CLOUDKARAFKA_BROKERS="host1:9094,host2:9094,host3:9094"`
+  Hostnames can be found in the Details view in for your CloudKarafka instance.
+* `export CLOUDKARAFKA_USERNAME="username"`
+  Username can be found in the Details view in for your CloudKarafka instance.
+* `export CLOUDKARAFKA_PASSWORD="password"`
+  Password can be found in the Details view in for your CloudKarafka instance.
+* `export CLOUDKARAFKA_TOPIC="username-topic"`
+  Topic should be the same as your username followed by a dash before the topic.
+* `export CONSUMER_GROUP="your-name"`
+  Unique consumer group for multiple users in the tutorial. 
+
+These export commands must be run in both of the terminal windows below.
+
+```
+git clone https://github.com/muhai-project/python-kafka-example.git
+cd python-kafka-example`
+pip install confluent_kafka
+python consumer.py
+```
+
+Open another terminal window and `cd` into same directory and run `python producer.py`.
+Send your messages by pressing your system's EOF key sequence. (ctrl-d in bash)
+##Adding a Root CA
+In some cases the CloudKarafka Root CA may need to be manually added to the example, particularly if you are seeing the error:
+```
+Failed to verify broker certificate: unable to get local issuer certificate 
+```
+returned when you run the example. If this is the case you will need to download the [CloudKarakfa Root CA from our FAQ page](https://www.cloudkarafka.com/docs/faq.html) and place it in the python-kafka-example directory, then add the following line into the `conf {...}` section:
+```
+'ssl.ca.location': 'cloudkarafka.ca'
+```
+This should resolve the error and allow for successful connection to the server.
+""" ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/python-kafka-example/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/python-kafka-example" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/python-kafka-example/master/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/python-kafka-example> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/MIT> ;
+    ns1:name "MIT License" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/python-kafka-example/master/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/python-kafka-example> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/python-kafka-example"^^xsd:anyURI ;
+    ns1:name "muhai-project/python-kafka-example" ;
+    ns1:programmingLanguage "Python" .
+

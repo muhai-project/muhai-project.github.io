@@ -1,0 +1,245 @@
+@prefix ns1: <https://w3id.org/okn/o/sd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/okn/i/Agent/muhai-project> a schema:Organization ;
+    schema:name "muhai-project" .
+
+<https://w3id.org/okn/i/Software/babel> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/babel> ;
+    ns1:contributingGuidelines """# How to Contribute
+
+We'd love to accept your patches and contributions to this project. There are
+just a few small guidelines you need to follow.
+
+## Contributor License Agreement
+
+Contributions to this project must be accompanied by a Contributor License
+Agreement. You (or your employer) retain the copyright to your contribution;
+this simply gives us permission to use and redistribute your contributions as
+part of the project.
+
+You generally only need to submit a CLA once, so if you've already submitted one
+(even if it was for a different project), you probably don't need to do it
+again.
+
+## The Contribution Process
+
+The basic workflow is:
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+With multiple contributors and the desire to maintain high quality
+code, we need a small bit of process. For example all submissions,
+including submissions by project members, require review. We use
+GitHub pull requests for this purpose. Consult [GitHub
+Help](https://help.github.com/articles/about-pull-requests/) for more
+information on using pull requests, and the [contributing
+code](https://lisp-stat.dev/docs/contributing/code/) page for more
+details.
+
+## Community Guidelines
+
+This project follows a code of conduct that can be found on the
+[contributing](https://www.lisp-stat.dev/docs/contributing/) page.
+
+## How to contribute
+
+See the [contribution
+guidelines](https://www.lisp-stat.dev/docs/contributing/)
+in the Lisp-Stat user guide.
+""" ;
+    ns1:contributionInstructions """# How to Contribute
+
+We'd love to accept your patches and contributions to this project. There are
+just a few small guidelines you need to follow.
+
+## Contributor License Agreement
+
+Contributions to this project must be accompanied by a Contributor License
+Agreement. You (or your employer) retain the copyright to your contribution;
+this simply gives us permission to use and redistribute your contributions as
+part of the project.
+
+You generally only need to submit a CLA once, so if you've already submitted one
+(even if it was for a different project), you probably don't need to do it
+again.
+
+## The Contribution Process
+
+The basic workflow is:
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+With multiple contributors and the desire to maintain high quality
+code, we need a small bit of process. For example all submissions,
+including submissions by project members, require review. We use
+GitHub pull requests for this purpose. Consult [GitHub
+Help](https://help.github.com/articles/about-pull-requests/) for more
+information on using pull requests, and the [contributing
+code](https://lisp-stat.dev/docs/contributing/code/) page for more
+details.
+
+## Community Guidelines
+
+This project follows a code of conduct that can be found on the
+[contributing](https://www.lisp-stat.dev/docs/contributing/) page.
+
+## How to contribute
+
+See the [contribution
+guidelines](https://www.lisp-stat.dev/docs/contributing/)
+in the Lisp-Stat user guide.
+"""^^xsd:anyURI ;
+    ns1:dateCreated "2024-09-12T18:31:23+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-27T10:21:09+00:00"^^xsd:dateTime ;
+    ns1:description """Babel is a flexible toolkit for implementing and running agent-based experiments on emergent communication. The Babel system includes advanced modules for constructional language processing and learning ([Fluid Construction Grammar](https://fcg-net.org)), conceptualising and interpreting procedural semantic structures (Incremental Recruitment Language), and conducting multi-agent experiments in simulated environments or using physical robots. 
+An extensive monitoring system opens up every detail of Babel’s intermediate representations and underlying dynamics. A modular design ensures that the system can be used in a wide variety of scenarios. It is therefore possible to use each component individually, according to your needs. 
+Babel is written in Common Lisp and runs in most major Lisp implementations (CCL, SBCL and LispWorks) on all major platforms (Linux, Mac OS, Windows). It is jointly developed by [Sony Computer Science Laboratories Paris](https://csl.sony.fr/), [Vrije Universiteit Brussel](https://ehai.ai.vub.ac.be/), [KU Leuven](https://itec.kuleuven-kulak.be/) and [UNamur](https://www.unamur.be/info) under an Apache 2.0 license.
+ 
+""",
+        "The all-in-one toolkit for multi-agent experiments on emergent communication" ;
+    ns1:hasDocumentation "https://github.com/muhai-project/babel/tree/master/libraries/distributions/docs"^^xsd:anyURI,
+        "https://github.com/muhai-project/babel/tree/master/libraries/drakma-2.0.8/docs"^^xsd:anyURI,
+        "https://github.com/muhai-project/babel/tree/master/libraries/special-functions/docs"^^xsd:anyURI,
+        "https://gitlab.ai.vub.ac.be/ehai/babel/-/wikis/home"^^xsd:anyURI ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/babel/releases"^^xsd:anyURI ;
+    ns1:hasExample "https://raw.githubusercontent.com/muhai-project/babel/master/applications/measures/plotting.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/visual-dialog/measures/plotting.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/clevr-extracted-colors.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/clevr-extracted.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/clevr-simulated.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/gmm/3d-densities.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/gmm/gmm-clevr.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/gmm/incremental-gmm.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/gmm/simple_gmm.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/match-symbolic.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/query-composition/question-generator/.ipynb_checkpoints/g%C3%A9n%C3%A9rateur%20notebook-checkpoint.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/query-composition/question-generator/g%C3%A9n%C3%A9rateur%20notebook.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/Untitled-1.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/analysis.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/grid_search.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/k-swap-clevr.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/make_plots.ipynb"^^xsd:anyURI ;
+    ns1:hasExecutableNotebook "https://raw.githubusercontent.com/muhai-project/babel/master/applications/measures/plotting.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/visual-dialog/measures/plotting.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/clevr-extracted-colors.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/clevr-extracted.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/clevr-simulated.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/gmm/3d-densities.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/gmm/gmm-clevr.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/gmm/incremental-gmm.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/gmm/simple_gmm.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/match-symbolic.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/query-composition/question-generator/.ipynb_checkpoints/g%C3%A9n%C3%A9rateur%20notebook-checkpoint.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/query-composition/question-generator/g%C3%A9n%C3%A9rateur%20notebook.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/Untitled-1.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/analysis.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/grid_search.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/k-swap-clevr.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/make_plots.ipynb" ;
+    ns1:hasInstallationInstructions """# Installation
+
+This document contains the steps required to install and configure the third version of the Flask server for the Nao robot.
+
+Improvements in this version:
+
+ - Docker is no longer required. The latest version of the `naoqi` Python SDK (v. 2.8) seems to run directly on mac OS.
+ - The vision system is much improved. We now use Mask R-CNN, a state-of-the-art neural network model for object detection and segmentation. This particular variant was pretrained on CLEVR images.
+
+## Step 1: Install Python 2
+
+## Step 2: Install Python packages
+
+## Step 3: Download the pretrained weights for Mask R-CNN
+
+## Step 4: Configure Mask R-CNN
+
+""",
+        """##Installation
+If you only wish to use Fluid Construction Grammar or Incremental Recruitment Language, we offer a user-friendly alternative through the [FCG Editor](https://www.fcg-net.org/download/). The FCG Editor offers all functionality of Babel's Fluid Construction Grammar and Incremental Recruitment Language systems through a powerful integrated development environment that can be installed in a single click.
+
+If you want the full Babel experience, detailed installation instructions for all major operating systems can be found on the [wiki](https://gitlab.ai.vub.ac.be/ehai/babel/-/wikis/home).
+""" ;
+    ns1:hasLongName "Babel" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/babel> ;
+    ns1:hasSupportScriptLocation "https://raw.githubusercontent.com/muhai-project/babel/master/applications/ccxg-explorer-web-api/start-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/ccxg-explorer-web-api/stop-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/clevr/clevr-web-service/start-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/clevr/clevr-web-service/stop-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/semantic-frame-extractor/web-service/start-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/semantic-frame-extractor/web-service/stop-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/visual-dialog/evaluation/job_scripts/comprehension-clevr-symbolic.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/visual-dialog/evaluation/job_scripts/comprehension-mnist-symbolic.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/visual-dialog/evaluation/job_scripts/evaluation-clevr-symbolic.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/visual-dialog/evaluation/job_scripts/evaluation-mnist-hybrid-guess.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/visual-dialog/evaluation/job_scripts/evaluation-mnist-hybrid.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/visual-dialog/evaluation/job_scripts/evaluation-mnist-symbolic.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/clean.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/clevr-grammar-learning/grammar-learning/learn.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/bash/run.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/bash/stop.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/batch-run.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-dinov2.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-hydra.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-hyperparam.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-maha.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-metrics.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-millie.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-millie2.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-paper.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-runtime.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-tacl.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/paper-hydra.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/run.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/test-ce3-dinov2.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/test-ce3-maha.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/test-ce3-metrics.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/test-ce3-paper.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/test-paper-hydra.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/test.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/grammars/coco-grammar/start-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/grammars/coco-grammar/stop-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/grammars/propbank-english/web-service/start-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/grammars/propbank-english/web-service/stop-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/scripts/grid-search-comopc.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/scripts/grid-search-hydra.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/drakma-2.0.8/.pre-release.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/local-time/doc/gendocs.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/systems/fcg-server/fcg-interactive/run.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/systems/grammar-learning/scripts/learn.sh"^^xsd:anyURI ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/babel/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/babel" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/babel/master/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/babel> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/babel/master/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/babel> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/babel"^^xsd:anyURI ;
+    ns1:name "muhai-project/babel" ;
+    ns1:programmingLanguage "Batchfile",
+        "C",
+        "CSS",
+        "Common Lisp",
+        "Emacs Lisp",
+        "HTML",
+        "JavaScript",
+        "Jupyter Notebook",
+        "Makefile",
+        "Python",
+        "Shell",
+        "TeX",
+        "XSLT" .
+

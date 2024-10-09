@@ -1,0 +1,47 @@
+@prefix ns1: <https://w3id.org/okn/o/sd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/okn/i/Agent/muhai-project> a schema:Organization ;
+    schema:name "muhai-project" .
+
+<https://w3id.org/okn/i/Software/soma> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/soma> ;
+    ns1:dateCreated "2022-02-16T13:25:35+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2022-04-12T08:43:43+00:00"^^xsd:dateTime ;
+    ns1:description """SOMA -- the **SO**cio-physical **M**odel of **A**ctivities -- is an ontological model of activities that attempts to equip robotic agents with abstract knowledge to make them perform activities in a more flexible and robust manner.
+*Sôma* is also a word for *body* derived from Ancient Greek, and *body* being a central aspect in this model due to severe difficulties of controlling the body of an agent in the physical world.
+More concretely, the scope of SOMA is how agents interact with their environment in terms of what are their intentions, what is their plan, how do they move, and how do they get into contact with each other or items in the environment. 
+SOMA is fully implemented in form of an OWL ontology which is based on the DOLCE+DnS Ultralite (DUL) upper-level ontology.
+[DUL](http://www.ontologydesignpatterns.org/ont/dul/DUL.owl) is a carefully designed upper-level ontology that seeks to model general categories underlying human cognition without making any discipline-specific assumptions.
+Our extensions mainly focus on characterizing different aspects of activities that were not considered sufficiently in DUL for the scope of autonomous robotics.
+ 
+""",
+        "The Socio-physical Model of Activities (SOMA) is a formal activity model for embodied agents that need to operate their body to generate motions that cause intentional effects in the physical and social world." ;
+    ns1:hasBuildFile "https://raw.githubusercontent.com/muhai-project/soma/master/.github/actions/convert/Dockerfile"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/soma/master/.github/actions/hermit/Dockerfile"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/soma/master/.github/actions/pythonlatex/Dockerfile"^^xsd:anyURI ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/soma/releases"^^xsd:anyURI ;
+    ns1:hasLongName "SOMA" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/soma> ;
+    ns1:hasSupportScriptLocation "https://raw.githubusercontent.com/muhai-project/soma/master/scripts/OntoMetrics.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/soma/master/scripts/ecv.sh"^^xsd:anyURI ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/soma/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/soma" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/soma/master/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/soma> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/LGPL-3.0> ;
+    ns1:name "GNU Lesser General Public License v3.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/soma/master/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/soma> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/soma"^^xsd:anyURI ;
+    ns1:name "muhai-project/soma" ;
+    ns1:programmingLanguage "Dockerfile",
+        "Java",
+        "Prolog",
+        "Python",
+        "Shell" .
+

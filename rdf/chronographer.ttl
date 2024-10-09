@@ -1,0 +1,122 @@
+@prefix ns1: <https://w3id.org/okn/o/sd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/okn/i/Agent/muhai-project> a schema:Organization ;
+    schema:name "muhai-project" .
+
+<https://w3id.org/okn/i/Software/chronographer> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/chronographer> ;
+    ns1:contactDetails "Inès Blin" ;
+    ns1:dateCreated "2024-07-22T14:39:09+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-07-22T14:56:28+00:00"^^xsd:dateTime ;
+    ns1:description "13-12-2021",
+        "ChronoGrapher is a 2-step method to build an event-centric knowledge graph automatically from another knowledge graph. The first step is a semantically-informed search in a generic knowledge graph, that is novel. The second step constructs event-centric knowledge graphs automatically.",
+        """We include some sample data in the `sample-data` folder.  
+Parameters that don't require additional data to be downloaded:
+* `rdf_type`: the type of nodes you want to retrieve. Keys should be a string, and values the string URI of that node type. In our experiments, we are mainly interested about events.
+* `predicate_filter`: list of predicates that are not taken into account for the search
+* `start`: node to start the search from
+* `start_date`: starting date of that `start` node
+* `end_date`: ending date of that `start` node
+* `iterations`: number of iterations for the search. The higher the number, the longer it will take to run.
+* `type_ranking`: the type of ranking to use for paths.
+* `type_interface`: type of interface used, in practice `hdt` only.
+* `type_metrics`: the metrics that are computed, should be a sub-list of `["precision", "recall", "f1"]`
+* `ordering` and `domain_range`: boolean, to activate or not this parameter
+* `filtering`: same than above
+* `name_exp`: name of your experiment, for the saving folder
+* `dataset_type`: type of dataset, depending on the one you have
+* `dataset_path`: path the the dataset folder 
+* `nested_dataset`: boolean, whether your dataset is nested (decomposed in smaller chunks) or not 
+Parameters that require additional data to be downloaded - c.f. section 4 for further details:
+* `gold_standard`: .csv path to the gold standard events
+* `referents`: .json path to the URI referents
+</details> 
+""" ;
+    ns1:hasAcknowledgments "This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement number 951846 and the Sony Computer Science Laboratories-Paris. We thank Frank van Harmelen for fruitful discussions." ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/chronographer/releases"^^xsd:anyURI ;
+    ns1:hasExample "https://raw.githubusercontent.com/muhai-project/chronographer/main/experiments_run/usage_ng/human_evaluation/analysis.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/chronographer/main/notebooks/eventkg-filtering.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/chronographer/main/notebooks/eventkg-info-one-event.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/chronographer/main/notebooks/eventkg-retrieving-events.ipynb"^^xsd:anyURI ;
+    ns1:hasExecutableNotebook "https://raw.githubusercontent.com/muhai-project/chronographer/main/experiments_run/usage_ng/human_evaluation/analysis.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/chronographer/main/notebooks/eventkg-filtering.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/chronographer/main/notebooks/eventkg-info-one-event.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/chronographer/main/notebooks/eventkg-retrieving-events.ipynb" ;
+    ns1:hasInstallationInstructions """##Installation instructions:
+First clone the repo
+```bash
+git clone git@github.com:muhai-project/chronographer.git
+```
+
+We used Poetry and conda for virtual environment and dependency management.
+
+Interface and traversal implemented with **Python 3.10.6**.
+
+First set up your virtual environment and then download [Poetry](https://python-poetry.org) for dependencies.
+
+To [install dependencies only](https://python-poetry.org/docs/basic-usage/#installing-dependencies-only)
+```bash
+poetry install --no-root
+```
+
+Alternatively, you can use the [full path to the `poetry` binary](https://python-poetry.org/docs/#installation)
+> * `~/Library/"Application Support"/pypoetry/venv/bin/poetry` on MacOS.
+> * `~/.local/share/pypoetry/venv/bin/poetry` on Linux/Unix.
+> * `%APPDATA%\\pypoetry\\venv\\Scripts\\poetry` on Windows.
+> * `$POETRY_HOME/venv/bin/poetry` if `$POETRY_HOME` is set.
+
+If you work on an Apple Silicon Machine + conda, you might later be prompted to download again `grpcio`, you can do it using:
+```bash
+pip uninstall grpcio
+conda install grpcio
+```
+
+Create a `private.py` file in the settings folder and add the followings:
+* AGENT (of computer, for sparql interface) [optional]
+* TOKEN (for Triply) [optional]
+* FOLDER_PATH (of git repository on your machine)
+
+
+[For submission] We use an external package that is currently WIP, for the purpose of this submission we include it directly into this code. To run its dependencies, run: 
+```bash
+cd kglab && python setup.py install
+```
+ 
+Then run the following for setting up the packages
+```bash
+python setup.py install
+```
+---""",
+        """Before running the search, you need to extrac domain, range and superclasses information from the dataset you downloaded. See file `src/extract_domain_range.py` for further information and command lines to run that file, depending on your dataset. 
+The results will be saved in the `experiments` folder in the root directory, in a folder starting by `<date>-<dataset_type>-<name_exp>`. 
+You can change the content of this configuration file. Some changes can be immediate, some others will require some additional data download (c.f. Section 4 to add further data for the search). 
+""",
+        """git@github.com:muhai-project/chronographer.git 
+""" ;
+    ns1:hasLongName "ChronoGrapher: Event-centric KG Construction via Informed Graph Traversal" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/chronographer> ;
+    ns1:hasSupportScriptLocation "https://raw.githubusercontent.com/muhai-project/chronographer/main/clean.sh"^^xsd:anyURI ;
+    ns1:hasUsageNotes """##Usage examples:
+If you have downloaded DBpedia, Wikidata or YAGO, it is possible to run the search with any of the events that is both in [EventKG](https://eventkg.l3s.uni-hannover.de) and in your dataset. We used [EventKG 3.1.](https://zenodo.org/record/4720078#.Y0bn-S8Rr0o) in our experiments.
+
+We propose 3 notebooks in the `notebooks` folder to extract additional data to run the search. You will also need to download [GraphDB](./https://graphdb.ontotext.com) to set up a local SPARQL endpoint.""" ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/chronographer/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/chronographer" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/chronographer/main/README.md"^^xsd:anyURI ;
+    ns1:softwareRequirements "Cf. `requirements.txt`" .
+
+<https://w3id.org/okn/i/License/chronographer> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/GPL-3.0> ;
+    ns1:name "GNU General Public License v3.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/chronographer/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/chronographer> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/chronographer"^^xsd:anyURI ;
+    ns1:name "muhai-project/chronographer" ;
+    ns1:programmingLanguage "Jupyter Notebook",
+        "Python",
+        "Shell" .
+

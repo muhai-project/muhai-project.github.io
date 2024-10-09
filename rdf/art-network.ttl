@@ -1,0 +1,34 @@
+@prefix ns1: <https://w3id.org/okn/o/sd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/okn/i/Agent/muhai-project> a schema:Organization ;
+    schema:name "muhai-project" .
+
+<https://w3id.org/okn/i/Software/art-network> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/art-network> ;
+    ns1:dateCreated "2024-04-23T12:24:18+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-04-23T12:24:18+00:00"^^xsd:dateTime ;
+    ns1:description "Collaboration with Sofia Baroncini and Luc Steels on art exploration using Integrative Narrative Networks",
+        """Collaboration with Sofia Baroncini and Luc Steels on art exploration using Integrative Narrative Networks
+ 
+""" ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/art-network/releases"^^xsd:anyURI ;
+    ns1:hasLongName "Art Network" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/art-network> ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/art-network/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/art-network" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/art-network/main/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/art-network> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/art-network/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/art-network> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/art-network"^^xsd:anyURI ;
+    ns1:name "muhai-project/art-network" ;
+    ns1:programmingLanguage "Common Lisp",
+        "HTML" .
+

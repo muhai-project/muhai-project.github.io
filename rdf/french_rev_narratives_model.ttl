@@ -1,0 +1,54 @@
+@prefix ns1: <https://w3id.org/okn/o/sd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/okn/i/Agent/muhai-project> a schema:Organization ;
+    schema:name "muhai-project" .
+
+<https://w3id.org/okn/i/Software/french_rev_narratives_model> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/french_rev_narratives_model> ;
+    ns1:contactDetails "Inès Blin" ;
+    ns1:dateCreated "2024-09-13T08:16:35+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-13T08:33:23+00:00"^^xsd:dateTime ;
+    ns1:description """ (KG in the form of .ttl files)
+ 
+""",
+        "13-09-2024",
+        "French Narrative Models (KG in the form of .ttl files)",
+        "This repository contains the KGs built from the French Revolution prototype. For the code to generate the KG, see [this repo](https://github.com/muhai-project/french_rev_narratives_code/tree/main)." ;
+    ns1:hasAcknowledgments """The work reported in this paper was funded by the [European MUHAI project](https://muhai.org) from the  Horizon 2020 research and innovation  programme under grant number 951846 and the Sony Computer Science Laboratories Paris.
+This work is also the result of a joint collaboration between the following partners in the project: [Sony CSL Paris](https://csl.sony.fr/project/building-narratives-computationally-from-knowledge-graphs/) & [Vrije Universiteit Amsterdam](https://krr.cs.vu.nl)""" ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/french_rev_narratives_model/releases"^^xsd:anyURI ;
+    ns1:hasInstallationInstructions """##Installation instructions:
+If using https, run:
+```python
+git clone https://github.com/muhai-project/french_rev_narratives_model.git 
+cd french_rev_narratives_model
+```
+
+If using ssh, run:
+```python
+git clone git@github.com:muhai-project/french_rev_narratives_model.git
+cd french_rev_narratives_model
+```
+""",
+        """Building a French Revolution Narrative from Wikidata 
+""",
+        """git@github.com:muhai-project/french_rev_narratives_model.git 
+""" ;
+    ns1:hasLongName "French Narrative Models" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/french_rev_narratives_model> ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/french_rev_narratives_model/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/french_rev_narratives_model" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/french_rev_narratives_model/main/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/french_rev_narratives_model> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/GPL-3.0> ;
+    ns1:name "GNU General Public License v3.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/french_rev_narratives_model/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/french_rev_narratives_model> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/french_rev_narratives_model"^^xsd:anyURI ;
+    ns1:name "muhai-project/french_rev_narratives_model" .
+

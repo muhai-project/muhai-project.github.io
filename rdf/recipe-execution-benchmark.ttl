@@ -1,0 +1,38 @@
+@prefix ns1: <https://w3id.org/okn/o/sd#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/okn/i/Agent/muhai-project> a schema:Organization ;
+    schema:name "muhai-project" .
+
+<https://w3id.org/okn/i/Software/recipe-execution-benchmark> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/recipe-execution-benchmark> ;
+    ns1:dateCreated "2024-09-12T19:28:25+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-13T07:28:33+00:00"^^xsd:dateTime ;
+    ns1:description """The directory [data](data) contains the recipe texts which are meant to serve as test input for developed natural language understanding models and the gold standard solutions which are their ideal output. In addition to the ideal semantic network, gold standard files have also been included that specify which sentence has led to certain cooking operations being included in the network. This has mostly been added to provide further insight when analyzing test results after development. Some example recipe texts with annotations and comments are provided in the [documentation](documentation) directory for use during development.   
+The directory [metadata](metadata) contains the online sources of all recipe data, including the date on which they were retrieved.
+ 
+""",
+        """This benchmark for recipe understanding in autonomous agents aims to support progressing the domain of natural language understanding by providing a setting in which performance can be measured on the everyday human activity of cooking. Showing deep understanding of such an activity requires both linguistic and extralinguistic skills, including reasoning with domain knowledge. For this goal, the benchmark provides a number of recipes written in natural (human) English that should be converted to a procedural semantic network of cooking operations that can be interpreted and executed by autonomous agents. A system, which supports one-click installation and execution, is also included that can perform recipe execution tasks in simulation allowing both analysis and evaluation of predicted networks. The provided evaluation metrics are mostly simulation-based, because demonstrating deep understanding of recipes can be done by effectively taking all the appropriate actions required for cooking the intended dish.
+ 
+""",
+        """To facilitate the evaluation, we also developed a standalone one-click executable. Due to file size limits, the executables could not be included in this repository. Instead, they are available for download via these links: [for Mac OS](https://ehai.vub.ac.be/recipe-execution-benchmark/assets/zips/cookingbot-evaluator-intel-mac.zip), [for Windows](https://ehai.vub.ac.be/recipe-execution-benchmark/assets/zips/cookingbot-evaluator-windows.zip), [for Linux](https://ehai.vub.ac.be/recipe-execution-benchmark/assets/zips/cookingbot-evaluator-linux.zip). More information about how to use this executable can be found in the [documentation](documentation) directory, including example solution files with explained result interpretations. 
+The directory [libs](libs) contains the Python library Smatch, which is required in case the executable should compute Smatch Score during evaluation. The path to this Smatch library should be given as a parameter to the executable. Again, more information about this is given in the [documentation](documentation). 
+ 
+""" ;
+    ns1:hasAcknowledgments "This research received funding from the EU’s H2020 RIA programme under grant agreement no. 951846 (MUHAI), the Research Foundation Flanders (FWO) through a post-doctoral grant awarded to PVE (grant no. 76929), and from the Collaborative Research Center (SFB) 1320 EASE – Everyday Activity Science and Engineering, University of Bremen (www.ease-crc.org), sub-project P01 \"Embodied Semantics for the Language of Action and Change\"." ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/recipe-execution-benchmark/releases"^^xsd:anyURI ;
+    ns1:hasLongName "Recipe Execution Benchmark" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/recipe-execution-benchmark> ;
+    ns1:hasSupportScriptLocation "https://raw.githubusercontent.com/muhai-project/recipe-execution-benchmark/master/documentation/examples/script/run-example.sh"^^xsd:anyURI ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/recipe-execution-benchmark/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/recipe-execution-benchmark" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/recipe-execution-benchmark/master/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/recipe-execution-benchmark> a schema:CreativeWork .
+
+<https://w3id.org/okn/i/SoftwareSource/recipe-execution-benchmark> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/recipe-execution-benchmark"^^xsd:anyURI ;
+    ns1:name "muhai-project/recipe-execution-benchmark" ;
+    ns1:programmingLanguage "Python" .
+

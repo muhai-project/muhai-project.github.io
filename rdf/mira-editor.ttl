@@ -1,0 +1,50 @@
+@prefix ns1: <https://w3id.org/okn/o/sd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/okn/i/Agent/muhai-project> a schema:Organization ;
+    schema:name "muhai-project" .
+
+<https://w3id.org/okn/i/Software/mira-editor> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/mira-editor> ;
+    ns1:contactDetails """l.stork@uva.nl 
+""" ;
+    ns1:dateCreated "2023-09-17T10:57:16+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-12T07:49:28+00:00"^^xsd:dateTime ;
+    ns1:description """01-02-2024
+""",
+        """This github presents the MIRA-editor, a digital assistant aiding researchers in understanding the trends and patterns revealed in social demography, and use them to discover biases, discover knowledge, and derive novel questions.
+""" ;
+    ns1:hasAcknowledgments """This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement
+number 951846.
+
+---
+
+""" ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/mira-editor/releases"^^xsd:anyURI ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/mira-editor> ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/mira-editor/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/mira-editor" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/mira-editor/main/README.md"^^xsd:anyURI ;
+    ns1:softwareRequirements """1. clone the project
+```
+git clone https://github.com/muhai-project/mira-editor.git
+```
+
+2. set up an environment (like anaconda) from the requirement.txt file (NOT AVAILABLE YET)
+```
+pip install -r requirements.txt
+```
+""" .
+
+<https://w3id.org/okn/i/License/mira-editor> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/mira-editor/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/mira-editor> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/mira-editor"^^xsd:anyURI ;
+    ns1:name "muhai-project/mira-editor" ;
+    ns1:programmingLanguage "Python" .
+

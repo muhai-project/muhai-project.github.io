@@ -1,0 +1,161 @@
+@prefix ns1: <https://w3id.org/okn/o/sd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/okn/i/Agent/muhai-project> a schema:Organization ;
+    schema:name "muhai-project" .
+
+<https://w3id.org/okn/i/Software/okg_media_discourse> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/okg_media_discourse> ;
+    ns1:contactDetails "Inès Blin" ;
+    ns1:dateCreated "2023-08-23T13:30:41+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-10-03T19:11:02+00:00"^^xsd:dateTime ;
+    ns1:description "17-01-2023",
+        """OKG: A Knowledge Graph for Social Media Discourse Analysis on Inequality 
+""",
+        """Snippets of code contained in the repository
+The `src/main.py` file runs all the components in the pipeline.
+1. **Build KG directly from the triples**: `src/build_kg/build_kg_from_triples.py`
+2. **Extract descriptions (tweet content)**: `src/features/get_description_pred.py`
+3. **Pre-processing**: `src/features/pre_process.py`
+4. **Extract frames with PropBank grammar**: `src/features/call_pb_grammar.py`
+5. **Extract other features (sentiment, etc)**: `src/features/extract_other_features.py`
+6. **Build graph from PropBank output + metrics**: `src/build_kg/build_kg_from_pb.py`
+7. **Build the graph that links nif:Structure nodes**: `src/build_kg/add_super_string.py`# Support channels:  
+""",
+        """This is the code for the paper accepted for publication to K-CAP 2023: "OKG: A Knowledge Graph for Social Media Discourse Analysis on Inequality". 
+""",
+        "This is the code for the paper accepted for publication to K-CAP 2023: \"OKG: A Knowledge Graph for Social Media Discourse Analysis on Inequality\". It enables to build a KG from a set of tweets and its metadata.",
+        """We used the [Widoco](https://github.com/dgarijo/Widoco) Wizard for documenting our ontology. 
+""" ;
+    ns1:hasAcknowledgments "This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement number 951846,  the Sony Computer Science Laboratories-Paris, the Vrije Universiteit Amsterdam, the University of Bremen, and the Venice International University. C.S. acknowledges financial support from PON R\\&I 2014–2020 (FSE REACT-EU). We thank Frank van Harmelen, Annette ten Teije and Ilaria Tiddi for fruitful discussions." ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/okg_media_discourse/releases"^^xsd:anyURI ;
+    ns1:hasExecutableInstructions """If you have one `.csv` file:
+```python
+python src/main.py -p <input-event-csv-file> -o <output-folder>
+``` 
+If you have a folder of `.csv` file:
+```python
+python src/main.py -f <input-event-folder-csv-file> -o <output-folder>
+```
+ 
+""",
+        """Snippets of code contained in the repository
+The `src/main.py` file runs all the components in the pipeline.
+1. **Build KG directly from the triples**: `src/build_kg/build_kg_from_triples.py`
+2. **Extract descriptions (tweet content)**: `src/features/get_description_pred.py`
+3. **Pre-processing**: `src/features/pre_process.py`
+4. **Extract frames with PropBank grammar**: `src/features/call_pb_grammar.py`
+5. **Extract other features (sentiment, etc)**: `src/features/extract_other_features.py`
+6. **Build graph from PropBank output + metrics**: `src/build_kg/build_kg_from_pb.py`
+7. **Build the graph that links nif:Structure nodes**: `src/build_kg/add_super_string.py`# Support channels:  
+""" ;
+    ns1:hasExecutionCommand """If you have one `.csv` file:
+```python
+python src/main.py -p <input-event-csv-file> -o <output-folder>
+``` 
+If you have a folder of `.csv` file:
+```python
+python src/main.py -f <input-event-folder-csv-file> -o <output-folder>
+```
+ 
+""",
+        """Snippets of code contained in the repository
+The `src/main.py` file runs all the components in the pipeline.
+1. **Build KG directly from the triples**: `src/build_kg/build_kg_from_triples.py`
+2. **Extract descriptions (tweet content)**: `src/features/get_description_pred.py`
+3. **Pre-processing**: `src/features/pre_process.py`
+4. **Extract frames with PropBank grammar**: `src/features/call_pb_grammar.py`
+5. **Extract other features (sentiment, etc)**: `src/features/extract_other_features.py`
+6. **Build graph from PropBank output + metrics**: `src/build_kg/build_kg_from_pb.py`
+7. **Build the graph that links nif:Structure nodes**: `src/build_kg/add_super_string.py`# Support channels:  
+""" ;
+    ns1:hasInstallationInstructions """##Installation instructions
+First clone the repo
+```bash
+git clone https://github.com/muhai-project/okg_media_discourse
+```##Virtualenv
+Python version used: 3.10.6. We recommend to use a virtual environment.
+
+Install the requirements:
+```bash
+pip install -r requirements.txt
+```
+##Babel
+To install Babel (necessary to extract frames from the PropBank grammar), see and check guide from [here](https://gitlab.ai.vub.ac.be/ehai/babel).
+
+To start the PropBank server, run in your Common Lisp editor:
+```common lisp
+(load "/path/to/babel-development/grammars/propbank-grammar/web-service/start-server.lisp")
+```
+##Endpoint
+Possible to use the public API endpoint for Framester, but we strongly recommend to set up a local repository. You can download the data on [their website](https://framester.github.io). We used GraphDB to set up the local endpoint.
+
+##src/private.py
+Create a `src/private.py` file, and add the following variables:
+* `FOLDER_PATH`: path to the local repository
+* `API_PROPBANK_GRAMMAR`: API to call the PropBank grammar (by default: `http://127.0.0.1:1170/extract-frames`)
+* `SPARQL_ENDPOINT`: endpoint to Framester
+##Install
+Run the following for setting up the packages
+```bash
+python setup.py install
+python -m spacy download en_core_web_sm
+```
+##Troubleshooting
+- If you work on an Apple Silicon Machine + conda, you might later be prompted to download again `grpcio`, you can do it using:
+    ```bash
+    conda install grpcio=1.43.0 -c conda-forge
+    ```
+""",
+        """Snippets of code contained in the repository
+The `src/main.py` file runs all the components in the pipeline.
+1. **Build KG directly from the triples**: `src/build_kg/build_kg_from_triples.py`
+2. **Extract descriptions (tweet content)**: `src/features/get_description_pred.py`
+3. **Pre-processing**: `src/features/pre_process.py`
+4. **Extract frames with PropBank grammar**: `src/features/call_pb_grammar.py`
+5. **Extract other features (sentiment, etc)**: `src/features/extract_other_features.py`
+6. **Build graph from PropBank output + metrics**: `src/build_kg/build_kg_from_pb.py`
+7. **Build the graph that links nif:Structure nodes**: `src/build_kg/add_super_string.py`# Support channels:  
+""",
+        """To generate content from the Widoco software (from the `ontology` folder): 
+```bash
+java -jar widoco-1.4.19-jar-with-dependencies_JDK-17.jar -ontFile observatory.owl -outFolder obio -confFile config.properties -uniteSections
+``` 
+""",
+        """To run the pipeline, you need to have a `.csv` file with your triples, or a folder with such `.csv`. 
+If you have one `.csv` file:
+```python
+python src/main.py -p <input-event-csv-file> -o <output-folder>
+``` 
+If you have a folder of `.csv` file:
+```python
+python src/main.py -f <input-event-folder-csv-file> -o <output-folder>
+```
+ 
+""",
+        """https://github.com/muhai-project/okg_media_discourse 
+""" ;
+    ns1:hasLongName "OKG Pipeline" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/okg_media_discourse> ;
+    ns1:hasSupportScriptLocation "https://raw.githubusercontent.com/muhai-project/okg_media_discourse/main/clean.sh"^^xsd:anyURI ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/okg_media_discourse/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/okg_media_discourse" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/okg_media_discourse/main/README.md"^^xsd:anyURI ;
+    ns1:softwareRequirements "Cf. `requirements.txt` for Python requirements." .
+
+<https://w3id.org/okn/i/License/okg_media_discourse> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/okg_media_discourse/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/okg_media_discourse> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/okg_media_discourse"^^xsd:anyURI ;
+    ns1:name "muhai-project/okg_media_discourse" ;
+    ns1:programmingLanguage "CSS",
+        "HTML",
+        "JavaScript",
+        "Python",
+        "Shell" .
+

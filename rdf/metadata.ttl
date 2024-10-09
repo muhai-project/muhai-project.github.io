@@ -1,0 +1,1725 @@
+@prefix ns1: <https://w3id.org/okn/o/sd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/okn/i/Agent/muhai-project> a schema:Organization ;
+    schema:name "muhai-project" .
+
+<https://w3id.org/okn/i/Software/art-network> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/art-network> ;
+    ns1:dateCreated "2024-04-23T12:24:18+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-04-23T12:24:18+00:00"^^xsd:dateTime ;
+    ns1:description "Collaboration with Sofia Baroncini and Luc Steels on art exploration using Integrative Narrative Networks",
+        """Collaboration with Sofia Baroncini and Luc Steels on art exploration using Integrative Narrative Networks""" ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/art-network/releases"^^xsd:anyURI ;
+    ns1:hasLongName "Art Network" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/art-network> ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/art-network/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/art-network" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/art-network/main/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/art-network> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/art-network/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/art-network> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/art-network"^^xsd:anyURI ;
+    ns1:name "muhai-project/art-network" ;
+    ns1:programmingLanguage "Common Lisp",
+        "HTML" .
+
+
+<https://w3id.org/okn/i/Software/babel> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/babel> ;
+    ns1:contributingGuidelines """# How to Contribute
+
+We'd love to accept your patches and contributions to this project. There are
+just a few small guidelines you need to follow.
+
+## Contributor License Agreement
+
+Contributions to this project must be accompanied by a Contributor License
+Agreement. You (or your employer) retain the copyright to your contribution;
+this simply gives us permission to use and redistribute your contributions as
+part of the project.
+
+You generally only need to submit a CLA once, so if you've already submitted one
+(even if it was for a different project), you probably don't need to do it
+again.
+
+## The Contribution Process
+
+The basic workflow is:
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+With multiple contributors and the desire to maintain high quality
+code, we need a small bit of process. For example all submissions,
+including submissions by project members, require review. We use
+GitHub pull requests for this purpose. Consult [GitHub
+Help](https://help.github.com/articles/about-pull-requests/) for more
+information on using pull requests, and the [contributing
+code](https://lisp-stat.dev/docs/contributing/code/) page for more
+details.
+
+## Community Guidelines
+
+This project follows a code of conduct that can be found on the
+[contributing](https://www.lisp-stat.dev/docs/contributing/) page.
+
+## How to contribute
+
+See the [contribution
+guidelines](https://www.lisp-stat.dev/docs/contributing/)
+in the Lisp-Stat user guide.
+""" ;
+    ns1:contributionInstructions """# How to Contribute
+
+We'd love to accept your patches and contributions to this project. There are
+just a few small guidelines you need to follow.
+
+## Contributor License Agreement
+
+Contributions to this project must be accompanied by a Contributor License
+Agreement. You (or your employer) retain the copyright to your contribution;
+this simply gives us permission to use and redistribute your contributions as
+part of the project.
+
+You generally only need to submit a CLA once, so if you've already submitted one
+(even if it was for a different project), you probably don't need to do it
+again.
+
+## The Contribution Process
+
+The basic workflow is:
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+With multiple contributors and the desire to maintain high quality
+code, we need a small bit of process. For example all submissions,
+including submissions by project members, require review. We use
+GitHub pull requests for this purpose. Consult [GitHub
+Help](https://help.github.com/articles/about-pull-requests/) for more
+information on using pull requests, and the [contributing
+code](https://lisp-stat.dev/docs/contributing/code/) page for more
+details.
+
+## Community Guidelines
+
+This project follows a code of conduct that can be found on the
+[contributing](https://www.lisp-stat.dev/docs/contributing/) page.
+
+## How to contribute
+
+See the [contribution
+guidelines](https://www.lisp-stat.dev/docs/contributing/)
+in the Lisp-Stat user guide.
+"""^^xsd:anyURI ;
+    ns1:dateCreated "2024-09-12T18:31:23+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-27T10:21:09+00:00"^^xsd:dateTime ;
+    ns1:description """Babel is a flexible toolkit for implementing and running agent-based experiments on emergent communication. The Babel system includes advanced modules for constructional language processing and learning ([Fluid Construction Grammar](https://fcg-net.org)), conceptualising and interpreting procedural semantic structures (Incremental Recruitment Language), and conducting multi-agent experiments in simulated environments or using physical robots. 
+An extensive monitoring system opens up every detail of Babel’s intermediate representations and underlying dynamics. A modular design ensures that the system can be used in a wide variety of scenarios. It is therefore possible to use each component individually, according to your needs. 
+Babel is written in Common Lisp and runs in most major Lisp implementations (CCL, SBCL and LispWorks) on all major platforms (Linux, Mac OS, Windows). It is jointly developed by [Sony Computer Science Laboratories Paris](https://csl.sony.fr/), [Vrije Universiteit Brussel](https://ehai.ai.vub.ac.be/), [KU Leuven](https://itec.kuleuven-kulak.be/) and [UNamur](https://www.unamur.be/info) under an Apache 2.0 license.
+ 
+""",
+        "The all-in-one toolkit for multi-agent experiments on emergent communication" ;
+    ns1:hasDocumentation "https://github.com/muhai-project/babel/tree/master/libraries/distributions/docs"^^xsd:anyURI,
+        "https://github.com/muhai-project/babel/tree/master/libraries/drakma-2.0.8/docs"^^xsd:anyURI,
+        "https://github.com/muhai-project/babel/tree/master/libraries/special-functions/docs"^^xsd:anyURI,
+        "https://gitlab.ai.vub.ac.be/ehai/babel/-/wikis/home"^^xsd:anyURI ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/babel/releases"^^xsd:anyURI ;
+    ns1:hasExample "https://raw.githubusercontent.com/muhai-project/babel/master/applications/measures/plotting.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/visual-dialog/measures/plotting.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/clevr-extracted-colors.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/clevr-extracted.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/clevr-simulated.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/gmm/3d-densities.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/gmm/gmm-clevr.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/gmm/incremental-gmm.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/gmm/simple_gmm.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/match-symbolic.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/query-composition/question-generator/.ipynb_checkpoints/g%C3%A9n%C3%A9rateur%20notebook-checkpoint.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/query-composition/question-generator/g%C3%A9n%C3%A9rateur%20notebook.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/Untitled-1.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/analysis.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/grid_search.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/k-swap-clevr.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/make_plots.ipynb"^^xsd:anyURI ;
+    ns1:hasExecutableNotebook "https://raw.githubusercontent.com/muhai-project/babel/master/applications/measures/plotting.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/visual-dialog/measures/plotting.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/clevr-extracted-colors.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/clevr-extracted.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/clevr-simulated.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/gmm/3d-densities.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/gmm/gmm-clevr.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/gmm/incremental-gmm.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/gmm/simple_gmm.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/notebooks/match-symbolic.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/query-composition/question-generator/.ipynb_checkpoints/g%C3%A9n%C3%A9rateur%20notebook-checkpoint.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/query-composition/question-generator/g%C3%A9n%C3%A9rateur%20notebook.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/Untitled-1.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/analysis.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/grid_search.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/k-swap-clevr.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/plots/make_plots.ipynb" ;
+    ns1:hasInstallationInstructions """# Installation
+
+This document contains the steps required to install and configure the third version of the Flask server for the Nao robot.
+
+Improvements in this version:
+
+ - Docker is no longer required. The latest version of the `naoqi` Python SDK (v. 2.8) seems to run directly on mac OS.
+ - The vision system is much improved. We now use Mask R-CNN, a state-of-the-art neural network model for object detection and segmentation. This particular variant was pretrained on CLEVR images.
+
+## Step 1: Install Python 2
+
+## Step 2: Install Python packages
+
+## Step 3: Download the pretrained weights for Mask R-CNN
+
+## Step 4: Configure Mask R-CNN
+
+""",
+        """##Installation
+If you only wish to use Fluid Construction Grammar or Incremental Recruitment Language, we offer a user-friendly alternative through the [FCG Editor](https://www.fcg-net.org/download/). The FCG Editor offers all functionality of Babel's Fluid Construction Grammar and Incremental Recruitment Language systems through a powerful integrated development environment that can be installed in a single click.
+
+If you want the full Babel experience, detailed installation instructions for all major operating systems can be found on the [wiki](https://gitlab.ai.vub.ac.be/ehai/babel/-/wikis/home).
+""" ;
+    ns1:hasLongName "Babel" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/babel> ;
+    ns1:hasSupportScriptLocation "https://raw.githubusercontent.com/muhai-project/babel/master/applications/ccxg-explorer-web-api/start-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/ccxg-explorer-web-api/stop-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/clevr/clevr-web-service/start-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/clevr/clevr-web-service/stop-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/semantic-frame-extractor/web-service/start-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/semantic-frame-extractor/web-service/stop-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/visual-dialog/evaluation/job_scripts/comprehension-clevr-symbolic.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/visual-dialog/evaluation/job_scripts/comprehension-mnist-symbolic.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/visual-dialog/evaluation/job_scripts/evaluation-clevr-symbolic.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/visual-dialog/evaluation/job_scripts/evaluation-mnist-hybrid-guess.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/visual-dialog/evaluation/job_scripts/evaluation-mnist-hybrid.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/applications/visual-dialog/evaluation/job_scripts/evaluation-mnist-symbolic.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/clean.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/clevr-grammar-learning/grammar-learning/learn.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/bash/run.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/bash/stop.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/batch-run.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-dinov2.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-hydra.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-hyperparam.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-maha.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-metrics.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-millie.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-millie2.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-paper.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-runtime.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/ce3-tacl.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/paper-hydra.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/run.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/test-ce3-dinov2.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/test-ce3-maha.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/test-ce3-metrics.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/test-ce3-paper.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/test-paper-hydra.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/experiments/concept-emergence2/batch/slurm/test.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/grammars/coco-grammar/start-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/grammars/coco-grammar/stop-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/grammars/propbank-english/web-service/start-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/grammars/propbank-english/web-service/stop-server.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/scripts/grid-search-comopc.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/au-benchmark/scripts/grid-search-hydra.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/drakma-2.0.8/.pre-release.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/libraries/local-time/doc/gendocs.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/systems/fcg-server/fcg-interactive/run.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/babel/master/systems/grammar-learning/scripts/learn.sh"^^xsd:anyURI ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/babel/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/babel" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/babel/master/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/babel> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/babel/master/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/babel> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/babel"^^xsd:anyURI ;
+    ns1:name "muhai-project/babel" ;
+    ns1:programmingLanguage "Batchfile",
+        "C",
+        "CSS",
+        "Common Lisp",
+        "Emacs Lisp",
+        "HTML",
+        "JavaScript",
+        "Jupyter Notebook",
+        "Makefile",
+        "Python",
+        "Shell",
+        "TeX",
+        "XSLT" .
+
+<https://w3id.org/okn/i/Software/fcg-editor> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/fcg-editor> ;
+    ns1:citation "10.1371/journal.pone.0269708"^^xsd:anyURI ;
+    ns1:dateCreated "2024-09-12T18:39:05+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-13T08:03:42+00:00"^^xsd:dateTime ;
+    ns1:description """The FCG editor, which is available for Microsoft Windows, macOS and Linux, allows you to quickly install and test Fluid Construction Grammar without having to set up a complete Lisp programming environment or the Babel software architecture. It includes all of the essential functionalities of FCG for rapidly defining and visualizing constructions in your web browser, and to develop grammar fragments that you can use for language comprehension and production. You can download the FCG Editor for free at [this page](https://www.fcg-net.org/download/). 
+""",
+        "The all-in one editor for Fluid Construction Grammar",
+        """_The all-in one editor for Fluid Construction Grammar_
+ 
+""" ;
+    ns1:hasAcknowledgments """This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement number 951846, the European project AI4EU under grant agreement number 825619, and the Research Foundation Flanders (FWO) under grant agreement number 75929. Additional funding for the development of the tool was provided by Sony Computer Science Laboratories Paris. 
+""" ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/fcg-editor/releases"^^xsd:anyURI ;
+    ns1:hasInstallationInstructions """The FCG editor, which is available for Microsoft Windows, macOS and Linux, allows you to quickly install and test Fluid Construction Grammar without having to set up a complete Lisp programming environment or the Babel software architecture. It includes all of the essential functionalities of FCG for rapidly defining and visualizing constructions in your web browser, and to develop grammar fragments that you can use for language comprehension and production. You can download the FCG Editor for free at [this page](https://www.fcg-net.org/download/). 
+""" ;
+    ns1:hasLongName "FCG Editor" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/fcg-editor> ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/fcg-editor/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/fcg-editor" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/fcg-editor/master/README.md"^^xsd:anyURI ;
+    ns1:referencePublication "10.1371/journal.pone.0269708"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/fcg-editor> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/fcg-editor/master/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/fcg-editor> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/fcg-editor"^^xsd:anyURI ;
+    ns1:name "muhai-project/fcg-editor" .
+
+<https://w3id.org/okn/i/Software/french_rev_narratives_code> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/french_rev_narratives_code> ;
+    ns1:contactDetails "Inès Blin" ;
+    ns1:dateCreated "2024-07-22T15:00:05+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-13T08:20:57+00:00"^^xsd:dateTime ;
+    ns1:description """  Streamlit web application to collect data and build networks. 
+    Used for the pilot: mapping Wikidata/Wikipedia, extracting infoboxes and text from Wikipedia 
+""",
+        "24-05-2022",
+        "Demonstration Paper Submitted at the Workshop on semantic techniques for narrative-based understanding",
+        "This projects aims to be a first prototype on narrative exploration. In particular, the focus of the study is the French Revolution. The idea is to explore events and participants throughout structured ([Wikidata](https://www.wikidata.org)) and unstructured ([Wikipedia](https://www.wikipedia.org)) data. Structured data can help better grasp the main entities, objects or events, while unstructured data like text can help make hypotheses on how events are linked." ;
+    ns1:hasAcknowledgments """The work reported in this paper was funded by the [European MUHAI project](https://muhai.org) from the  Horizon 2020 research and innovation  programme under grant number 951846 and the Sony Computer Science Laboratories Paris.
+This work is also the result of a joint collaboration between the following partners in the project: [Sony CSL Paris](https://csl.sony.fr/project/building-narratives-computationally-from-knowledge-graphs/) & [Vrije Universiteit Amsterdam](https://krr.cs.vu.nl)""" ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/french_rev_narratives_code/releases"^^xsd:anyURI ;
+    ns1:hasExecutableInstructions """To run the streamlit app
+```bash
+cd app-demo && streamlit run app.py
+``` 
+""" ;
+    ns1:hasExecutionCommand """To run the streamlit app
+```bash
+cd app-demo && streamlit run app.py
+``` 
+""" ;
+    ns1:hasInstallationInstructions """  Module to build networks using networkx or pyvis. 
+""",
+        """##Installation instructions:
+If using https, run:
+```python
+git clone https://github.com/muhai-project/french_rev_narratives_code.git 
+cd french_rev_narratives_code
+```
+
+If using ssh, run:
+```python
+git clone git@github.com:muhai-project/french_rev_narratives_code.git
+cd french_rev_narratives_code
+```
+
+In the `settings` folder, create a `private.py`file and add the following paramters:
+* ROOT_PATH: root path to the project directory
+* AGENT: your user agent that you can find on the web.
+
+
+Version of Python used: 3.9.4
+
+Create a virtual env and activate it (example below with conda)
+```bash
+conda create -n <yourenvname> python=3.9.4
+conda activate <yourenvname>
+```
+
+```bash
+pip install -r requirements.txt
+```
+Then run the following:
+```bash
+python setup.py install
+```""",
+        """Building a French Revolution Narrative from Wikidata 
+""",
+        """Later when launching the app, you might encounter the following error:
+```bash
+ImportError: pycurl: libcurl link-time ssl backends (secure-transport, openssl) do not include compile-time ssl backend (none/other)
+``` 
+To prevent this error, and following [this link](https://stackoverflow.com/questions/21096436/ssl-backend-error-when-using-openssl), you can run the followings:
+```bash
+pip uninstall pycurl
+export PYCURL_SSL_LIBRARY=openssl
+pip install pycurl --no-cache-dir
+``` 
+""",
+        """To run the streamlit app
+```bash
+cd app-demo && streamlit run app.py
+``` 
+""",
+        """git@github.com:muhai-project/french_rev_narratives_code.git 
+""",
+        """https://github.com/SonyCSLParis/building-fr-narrative-from-wikidata-1/tree/main 
+""" ;
+    ns1:hasLongName "Narrative Prototype - The French Revolution" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/french_rev_narratives_code> ;
+    ns1:hasSupportScriptLocation "https://raw.githubusercontent.com/muhai-project/french_rev_narratives_code/main/clean.sh"^^xsd:anyURI ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/french_rev_narratives_code/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/french_rev_narratives_code" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/french_rev_narratives_code/main/README.md"^^xsd:anyURI ;
+    ns1:softwareRequirements "Cf. requirements.txt" .
+
+<https://w3id.org/okn/i/License/french_rev_narratives_code> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/GPL-3.0> ;
+    ns1:name "GNU General Public License v3.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/french_rev_narratives_code/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/french_rev_narratives_code> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/french_rev_narratives_code"^^xsd:anyURI ;
+    ns1:name "muhai-project/french_rev_narratives_code" ;
+    ns1:programmingLanguage "HTML",
+        "Python",
+        "Shell" .
+
+<https://w3id.org/okn/i/Software/french_rev_narratives_model> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/french_rev_narratives_model> ;
+    ns1:contactDetails "Inès Blin" ;
+    ns1:dateCreated "2024-09-13T08:16:35+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-13T08:33:23+00:00"^^xsd:dateTime ;
+    ns1:description """ (KG in the form of .ttl files)
+ 
+""",
+        "13-09-2024",
+        "French Narrative Models (KG in the form of .ttl files)",
+        "This repository contains the KGs built from the French Revolution prototype. For the code to generate the KG, see [this repo](https://github.com/muhai-project/french_rev_narratives_code/tree/main)." ;
+    ns1:hasAcknowledgments """The work reported in this paper was funded by the [European MUHAI project](https://muhai.org) from the  Horizon 2020 research and innovation  programme under grant number 951846 and the Sony Computer Science Laboratories Paris.
+This work is also the result of a joint collaboration between the following partners in the project: [Sony CSL Paris](https://csl.sony.fr/project/building-narratives-computationally-from-knowledge-graphs/) & [Vrije Universiteit Amsterdam](https://krr.cs.vu.nl)""" ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/french_rev_narratives_model/releases"^^xsd:anyURI ;
+    ns1:hasInstallationInstructions """##Installation instructions:
+If using https, run:
+```python
+git clone https://github.com/muhai-project/french_rev_narratives_model.git 
+cd french_rev_narratives_model
+```
+
+If using ssh, run:
+```python
+git clone git@github.com:muhai-project/french_rev_narratives_model.git
+cd french_rev_narratives_model
+```
+""",
+        """Building a French Revolution Narrative from Wikidata 
+""",
+        """git@github.com:muhai-project/french_rev_narratives_model.git 
+""" ;
+    ns1:hasLongName "French Narrative Models" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/french_rev_narratives_model> ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/french_rev_narratives_model/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/french_rev_narratives_model" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/french_rev_narratives_model/main/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/french_rev_narratives_model> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/GPL-3.0> ;
+    ns1:name "GNU General Public License v3.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/french_rev_narratives_model/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/french_rev_narratives_model> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/french_rev_narratives_model"^^xsd:anyURI ;
+    ns1:name "muhai-project/french_rev_narratives_model" .
+
+
+<https://w3id.org/okn/i/Software/marl_language_games> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/marl_language_games> ;
+    ns1:citation "10.1093/jole/lzad001"^^xsd:anyURI ;
+    ns1:dateCreated "2024-09-12T10:09:07+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-13T08:26:34+00:00"^^xsd:dateTime ;
+    ns1:description """    ├── cfg                <- Configurations files for experiments
+    │
+    ├── data               <- The original, immutable logged experiments.
+    │
+    ├── marl_language_games <- Source code for use in this project.
+    │
+    ├── scripts            <- Scripts of the marl_language_games package
+    │
+    ├── tests              <- Unit tests for marl_language_games package
+    │
+    ├── Makefile           <- Makefile with commands to create conda env
+    │
+    ├── README.md          <- The top-level README for developers using this project.
+    │
+    ├── environment.yml    <- The project's package dependency list for reproducing the environment
+    │
+    ├── setup.py           <- makes project pip installable (pip install -e .) so marl_language_games can be imported
+    │
+    └── setup.cfg          <- pytest, flake8, black and isort settings
+ 
+""",
+        """Once the experiments have completed, a plot with the main dynamics of the naming game is generated and displayed.
+ 
+""",
+        """This repository accompanies the paper [Language games meet multi-agent reinforcement learning: A case study for the naming game](https://academic.oup.com/jole/article/7/2/213/7128304#410601591). It studies emergent communication through the multi-agent reinforcement learning framework and the language games paradigm.
+ 
+""" ;
+    ns1:hasAcknowledgments """The research reported on in this paper was financed by the Research Foundation Flanders (FWO - Vlaanderen) through postdoctoral grants awarded to Paul Van Eecke (75929) and Roxana Rădulescu (1286223N), and by the European Union’s Horizon 2020 research and innovation programme under grant agreement no. 951846 (MUHAI - https://www.muhai.org).
+""" ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/marl_language_games/releases"^^xsd:anyURI ;
+    ns1:hasExecutableInstructions """Make sure that the `marl_language_games` environment has been setup and activated.
+
+Two scripts are available in the directory `scripts` at the moment:
+
+```
+run_experiment.py # running a full experiment with multiple trials
+run_competition.py # running an experiment solely for the purpose of creating competition graphs
+```
+
+Both scripts allow the following command-line args:
+
+- `--cfg`
+  - [required] [str]
+  - specifies a path to a yml config file
+  - examples of configs can be found in the `cfg/` directory
+- `--debug`
+  - [optional] [flag] [default: `false`]
+  - specify whether to log DEBUG-level messages
+  - messages are logged to a logfile in the unique directory under `--log_path`
+- `--print-every`
+  - [optional] [int] [default `1000`]
+  - requires `--debug` flag to be set
+  - logs every x-th communicative interaction (and prints to stdout)
+
+For example, the following command runs the basic naming game experiment with the parameters specified in the configuration file found at `cfg/config.yml`.
+
+```
+python scripts/run_experiment.py --cfg cfg/config.yml --debug --print_every 5000
+```
+""" ;
+    ns1:hasInstallationInstructions """    ├── cfg                <- Configurations files for experiments
+    │
+    ├── data               <- The original, immutable logged experiments.
+    │
+    ├── marl_language_games <- Source code for use in this project.
+    │
+    ├── scripts            <- Scripts of the marl_language_games package
+    │
+    ├── tests              <- Unit tests for marl_language_games package
+    │
+    ├── Makefile           <- Makefile with commands to create conda env
+    │
+    ├── README.md          <- The top-level README for developers using this project.
+    │
+    ├── environment.yml    <- The project's package dependency list for reproducing the environment
+    │
+    ├── setup.py           <- makes project pip installable (pip install -e .) so marl_language_games can be imported
+    │
+    └── setup.cfg          <- pytest, flake8, black and isort settings
+ 
+""",
+        """##Installation
+Anaconda is probably the fastest way to get up and running with Python environments. However, the full Anaconda toolkit installs 1500 Python packages and takes up 3GB of disk space. A good alternative, therefore, is Miniconda. Miniconda will only install the bare minimum to run Python. It is then up to you to manually install the packages that you _really_ need.
+
+Download Miniconda from [this website](https://docs.conda.io/en/latest/miniconda.html) and follow the installation instructions. If you are prompted to add Miniconda to your `.bash_profile` or `.zshrc`, accept. For the changes to take effect and use `conda` from the command line, you must restart the Terminal. At the time of writing, the Miniconda website suggests to install Miniconda with Python 3.7.
+
+The `environment.yml` file presents in this repository makes it easy to recreate the `marl_language_games` conda environment that was used to develop this project. This file lists all necessary packages and their version numbers. You can use the Makefile to setup this environment.
+
+1. To recreate the `marl_language_games` conda environment that was used to develop this project, run:
+   - `make install_conda_env`
+2. If the environment was successfully created, you can activate it by running
+   - `conda activate marl_language_games`
+   - You should see the prompt of your Terminal change from `(base)` to `(marl_language_games)`.
+3. Then to install the `marl_language_games` package into the newly create `(marl_language_games)` environment, run:
+   - `make install_package`
+   - You should see the `marl_language_games` package when listing all dependencies of the environment through `conda list`.
+""",
+        """This repository provides unit tests (with pytest) for the `marl_language_games` package in the `tests/` folder. The conda environment associated with the `environment.yml` installs `pytest`. The tests can be run with `pytest` in the command-line.
+ 
+""" ;
+    ns1:hasLongName "Multi-agent Reinforcement Learning (MARL) Language Games" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/marl_language_games> ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/marl_language_games/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/marl_language_games" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/marl_language_games/jole/README.md"^^xsd:anyURI ;
+    ns1:referencePublication "10.1093/jole/lzad001"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/marl_language_games> a schema:CreativeWork .
+
+<https://w3id.org/okn/i/SoftwareSource/marl_language_games> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/marl_language_games"^^xsd:anyURI ;
+    ns1:name "muhai-project/marl_language_games" ;
+    ns1:programmingLanguage "Makefile",
+        "Python" .
+
+<https://w3id.org/okn/i/Software/mira-editor> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/mira-editor> ;
+    ns1:contactDetails """l.stork@uva.nl 
+""" ;
+    ns1:dateCreated "2023-09-17T10:57:16+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-12T07:49:28+00:00"^^xsd:dateTime ;
+    ns1:description """01-02-2024
+""",
+        """This github presents the MIRA-editor, a digital assistant aiding researchers in understanding the trends and patterns revealed in social demography, and use them to discover biases, discover knowledge, and derive novel questions.
+""" ;
+    ns1:hasAcknowledgments """This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement
+number 951846.
+
+---
+
+""" ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/mira-editor/releases"^^xsd:anyURI ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/mira-editor> ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/mira-editor/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/mira-editor" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/mira-editor/main/README.md"^^xsd:anyURI ;
+    ns1:softwareRequirements """1. clone the project
+```
+git clone https://github.com/muhai-project/mira-editor.git
+```
+
+2. set up an environment (like anaconda) from the requirement.txt file (NOT AVAILABLE YET)
+```
+pip install -r requirements.txt
+```
+""" .
+
+<https://w3id.org/okn/i/License/mira-editor> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/mira-editor/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/mira-editor> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/mira-editor"^^xsd:anyURI ;
+    ns1:name "muhai-project/mira-editor" ;
+    ns1:programmingLanguage "Python" .
+
+<https://w3id.org/okn/i/Software/mira-kg> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/mira-kg> ;
+    ns1:contactDetails """Lise Stork, l.stork@uva.nl
+""" ;
+    ns1:dateCreated "2024-09-11T15:32:28+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-12T07:58:17+00:00"^^xsd:dateTime ;
+    ns1:description """In the research workflow of a social historian or social demographer, research questions commonly include (i) descriptive questions, (ii) comparative questions, and (iii) explanatory questions. Here, each question is answered based on the output from a previous question or dataset, see the image below. An example workflow, and how such a workflow can be made more FAIR, is shown below.  
+In social demography, work has been done formally describing observational data, such as census data hosted as linked data at the International Institute of
+Social History (IISH). To the best of our knowledge, no studies formalise knowledge such as hypotheses and findings on social demography, whereas these are important in each of the
+steps of the scientific workflow of a social historian (see declarative/procedural knowledge in the figure above). The research process, hypotheses and findings are mostly written up in scientific documents
+in natural language, which can be ambiguous and imprecise. Such fields can thus benefit from adopting the FAIR data principles, to reduce unclarity and ambiguity in the research workflow of a social demographer.  
+The [MIRA ontology](https://w3id.org/mira/ontology/) describes this process: it links datasets of observations to research questions, to accommodate the research workflow of a social demographer/social historian towards more reusable, reproducible research. We also populate the ontology with structured research questions on health inequality, extracted from abstracts of research papers, and is published on [Zenodo](https://doi.org/10.5281/zenodo.10286846), and queriable via a [SPARQL endpoint](
+https://api.druid.datalegend.net/datasets/lisestork/MIRA-KG/services/MIRA-KG/sparql). 
+This [github](https://github.com/muhai-project/mira/) contains the ontology, example annotations, scripts to produce structured annotations automatically from paper abstracts (explanatory questions and metadata of evidence used to answer the RQs), and SHACL shapes for the validation of generated annotations. 
+""",
+        """MIRA - A Knowledge Graph for Social Demography Hypotheses and Findings.
+ 
+""",
+        """This github presents the MIRA-KG, a knowledge graph designed to capture hypotheses and findings in social demography research. The resource aids researchers in understanding the trends and patterns revealed in social demography, and use them to discover biases, discover knowledge, and derive novel questions.
+""",
+        """```
+PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
+PREFIX mira: <https://w3id.org/mira/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX gn: <http://www.geonames.org/ontology#>
+PREFIX stato: <http://purl.obolibrary.org/obo/> 
+PREFIX mesh: <http://purl.bioontology.org/ontology/MESH/>
+PREFIX wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+select ?inf_cont_ent1 ?inf_cont_ent2 ?ice1_type ?ice2_type 
+        ?subject ?begin ?end ?name ?lat ?long where { 
+    ?comp a mira:Comparison . 
+        mira:hasSubject ?inf_cont_ent1 ; #descriptive statistic
+        mira:hasObject ?inf_cont_ent2 ; #descriptive statistic
+        mira:hasRelation ?relation ; #relation between the two descriptive statistics
+        mira:hasContext ?sample ;  #dataset used to calculate the statistics
+        sio:SIO_000205 ?exp .
+    ?exp mira:hasSubject/qb:concept/rdfs:label ?subject ; #what is the subject of the claim
+         #the object of the claim is COVID-19 and Mortality
+         mira:hasObject/qb:concept mesh:D000086382, stato:STATO_0000414 .
+    ?inf_cont_ent1 sio:SIO_000332 ?component_property1 ; #what does the statistic measure
+        rdf:type ?ice1_type . #what type of statistic (e.g., a mean)
+    ?inf_cont_ent2 sio:SIO_000332 ?component_property2 ; #what does the statistic measure 
+        rdf:type ?ice2_type . #what type of statistic (e.g., a mean)
+    #what is the temporal and geographic coverage of the sample
+    ?sample time:hasTime/time:hasBeginning/time:inXSDDate ?begin ;  #start time
+        time:hasTime/time:hasEnd/time:inXSDDate ?end ; #end time
+        #retrieve geonames metadata
+        sem:hasPlace/gn:locatedIn ?gnId . 
+        ?gnId gn:name ?name ;
+            wgs84_pos:long ?long ; 
+            wgs84_pos:lat ?lat . }
+```
+ 
+""" ;
+    ns1:hasAcknowledgments """This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement
+number 951846. We thank Tobias Kuhn and Inès Blin for the insightful discussions that contributed to this work.
+
+
+---
+
+""" ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/mira-kg/releases"^^xsd:anyURI ;
+    ns1:hasInstallationInstructions """```
+PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
+PREFIX mira: <https://w3id.org/mira/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX gn: <http://www.geonames.org/ontology#>
+PREFIX stato: <http://purl.obolibrary.org/obo/> 
+PREFIX mesh: <http://purl.bioontology.org/ontology/MESH/>
+PREFIX wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+select ?inf_cont_ent1 ?inf_cont_ent2 ?ice1_type ?ice2_type 
+        ?subject ?begin ?end ?name ?lat ?long where { 
+    ?comp a mira:Comparison . 
+        mira:hasSubject ?inf_cont_ent1 ; #descriptive statistic
+        mira:hasObject ?inf_cont_ent2 ; #descriptive statistic
+        mira:hasRelation ?relation ; #relation between the two descriptive statistics
+        mira:hasContext ?sample ;  #dataset used to calculate the statistics
+        sio:SIO_000205 ?exp .
+    ?exp mira:hasSubject/qb:concept/rdfs:label ?subject ; #what is the subject of the claim
+         #the object of the claim is COVID-19 and Mortality
+         mira:hasObject/qb:concept mesh:D000086382, stato:STATO_0000414 .
+    ?inf_cont_ent1 sio:SIO_000332 ?component_property1 ; #what does the statistic measure
+        rdf:type ?ice1_type . #what type of statistic (e.g., a mean)
+    ?inf_cont_ent2 sio:SIO_000332 ?component_property2 ; #what does the statistic measure 
+        rdf:type ?ice2_type . #what type of statistic (e.g., a mean)
+    #what is the temporal and geographic coverage of the sample
+    ?sample time:hasTime/time:hasBeginning/time:inXSDDate ?begin ;  #start time
+        time:hasTime/time:hasEnd/time:inXSDDate ?end ; #end time
+        #retrieve geonames metadata
+        sem:hasPlace/gn:locatedIn ?gnId . 
+        ?gnId gn:name ?name ;
+            wgs84_pos:long ?long ; 
+            wgs84_pos:lat ?lat . }
+```
+ 
+""",
+        """https://github.com/muhai-project/mira
+ 
+""" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/mira-kg> ;
+    ns1:hasUsageNotes """##Usage examples:
+SPARQL queries can be found here: [https://github.com/muhai-project/mira/tree/main/queries](https://github.com/muhai-project/mira/tree/main/queries)
+An example query is shown below: 
+""" ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/mira-kg/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/mira-kg" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/mira-kg/main/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/mira-kg> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/mira-kg/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/mira-kg> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/mira-kg"^^xsd:anyURI ;
+    ns1:name "muhai-project/mira-kg" .
+
+
+<https://w3id.org/okn/i/Software/mira> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/mira> ;
+    ns1:contactDetails """Lise Stork, l.stork@uva.nl
+""" ;
+    ns1:dateCreated "2023-08-27T10:44:26+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-12T08:00:31+00:00"^^xsd:dateTime ;
+    ns1:description """In the research workflow of a social historian or social demographer, research questions commonly include (i) descriptive questions, (ii) comparative questions, and (iii) explanatory questions. Here, each question is answered based on the output from a previous question or dataset, see the image below. An example workflow, and how such a workflow can be made more FAIR, is shown below.  
+In social demography, work has been done formally describing observational data, such as census data hosted as linked data at the International Institute of
+Social History (IISH). To the best of our knowledge, no studies formalise knowledge such as hypotheses and findings on social demography, whereas these are important in each of the
+steps of the scientific workflow of a social historian (see declarative/procedural knowledge in the figure above). The research process, hypotheses and findings are mostly written up in scientific documents
+in natural language, which can be ambiguous and imprecise. Such fields can thus benefit from adopting the FAIR data principles, to reduce unclarity and ambiguity in the research workflow of a social demographer.  
+The [MIRA ontology](https://w3id.org/mira/ontology/) describes this process: it links datasets of observations to research questions, to accommodate the research workflow of a social demographer/social historian towards more reusable, reproducible research. We also populate the ontology with structured research questions on health inequality, extracted from abstracts of research papers, and is published on [Zenodo](https://doi.org/10.5281/zenodo.10286846), and queriable via a [SPARQL endpoint](
+https://api.druid.datalegend.net/datasets/lisestork/MIRA-KG/services/MIRA-KG/sparql). 
+This [github](https://github.com/muhai-project/mira/) contains the ontology, example annotations, scripts to produce structured annotations automatically from paper abstracts (explanatory questions and metadata of evidence used to answer the RQs), and SHACL shapes for the validation of generated annotations.
+ 
+""",
+        """MIRA - A Knowledge Graph for Social Demography Hypotheses and Findings.
+ 
+""",
+        """This github presents the MIRA-KG, a knowledge graph designed to capture hypotheses and findings in social demography research. The resource aids researchers in understanding the trends and patterns revealed in social demography, and use them to discover biases, discover knowledge, and derive novel questions.
+""" ;
+    ns1:hasAcknowledgments """This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement
+number 951846. We thank Tobias Kuhn and Inès Blin for the insightful discussions that contributed to this work.
+
+
+---
+
+""" ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/mira/releases"^^xsd:anyURI ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/mira> ;
+    ns1:hasUsageNotes """##Usage examples:
+The semantify.py script turns research paper abstracts of papers on social demography into RDF according to the MIRA ontology. It does so by: (i) prompting a Large Language Model to annotate paper abstracts, (ii) mapping concepts to terms from NCBO BioPortal ontologies and Geonames. An example annotation is shown in the figure below:
+
+![Example annotation](./figures/example-annotation.png)
+![Example annotation](./figures/example-annotation.html)
+
+To test the code, you can use the example paper_file.pkl file with papers on social health inequality.
+
+```
+python semantify.py --paper_file ../data/paper_file.pkl --api_key "your api key" --output ../data/test_output.ttl --max 1 --view 1
+```
+
+The location of the input file, the openAI api key, and the output file are required arguments. Max and view are optional and indicate how many papers to process, and whether to print the serialised RDF after each step. _To check whether all works as expected, we recommend to first set these to 1 and True, before processing a large batch._
+
+The --paper_file argument expects the location of a pickle file (.pkl) which consists of a list of dictionaries with the following keys:
+dict_keys(['paperId','title','abstract','year','publicationDate','authors','references'])
+These can, for instance, be retrieved from Semantic Scholar:
+
+```
+from semanticscholar import SemanticScholar
+
+sch = SemanticScholar()
+results = sch.search_paper('',year=, fields_of_study=[''])
+papers = [sch.get_paper(result.paperId) for result in results]
+```
+
+You can use the validate.py script to validate the set against a set of SHACL shapes, developed according to a set of data quality criteria.
+
+```
+python validate.py --batch_file ../data/test_output.ttl --shacl_file ../validation/shacl-shapes.ttl --validation_output validation_results.ttl --view 1
+```
+""" ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/mira/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/mira" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/mira/main/README.md"^^xsd:anyURI ;
+    ns1:softwareRequirements """1. clone the project
+```
+git clone https://github.com/muhai-project/mira.git
+```
+
+2. set up an environment (like anaconda) from the requirement.txt file
+```
+pip install -r requirements.txt
+```
+""" .
+
+<https://w3id.org/okn/i/License/mira> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/mira/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/mira> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/mira"^^xsd:anyURI ;
+    ns1:name "muhai-project/mira" ;
+    ns1:programmingLanguage "CSS",
+        "HTML",
+        "Python" .
+
+<https://w3id.org/okn/i/Software/okg_visualisation> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/okg_visualisation> ;
+    ns1:dateCreated "2024-01-31T13:33:23+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-01-31T13:33:24+00:00"^^xsd:dateTime ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/okg_visualisation/releases"^^xsd:anyURI ;
+    ns1:hasLongName "Visualizing Social Debates on Inequality from a Large Social Media Knowledge Graph" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/okg_visualisation> ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/okg_visualisation/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/okg_visualisation" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/okg_visualisation/main/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/okg_visualisation> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/okg_visualisation/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/okg_visualisation> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/okg_visualisation"^^xsd:anyURI ;
+    ns1:name "muhai-project/okg_visualisation" .
+
+<https://w3id.org/okn/i/Software/PICO-frameExtraction> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/PICO-frameExtraction> ;
+    ns1:contactDetails """Lise Stork, l.stork@uva.nl
+""" ;
+    ns1:dateCreated "2021-11-22T14:28:27+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-12T07:59:38+00:00"^^xsd:dateTime ;
+    ns1:description """If PICO graphs are to be seen as a representation of a narrative underlying a text, the automatic extraction of PICO graphs from texts can be seen as the extraction of narratives from them. One idea is to do this by starting from frames extracted from the text (using Brussel's frame extraction method, T1.4). We discussed the initial design of a method for updating and using a personal dynamic memory to build up and interpret the information contained in the frames. Concretely, the entities and relations between the entities that are part of the extracted semantic frames are incrementally added to and extended in the personal dynamic memory. At the same time this information is matched to perform the resolution of references to these entities. Based on the gold standard PICO annotations, it can then be learned how (a subset of) the relations contained in the PDM can be mapped to PICO relations based on the entities they contain. 
+
+Katrien and Paul presented an initial idea of how a personal dynamic memory could be build up based on the combination of text analysis and information contained in knowledge graphs (see the Matilda microproject from the Venice meeting). The personal dynamic memory would contain here the referents of the entities evoked in a story, as well as the relations between them. The knowledge graphs are used as background information and can be used to resolve co-references or add additional relations that are not mentioned in the text to the personal dynamic memory. The representations captured in the PDM can then be used for a variety of tasks, including answering questions about the story, summarising the story, providing temporal, causal, etc. perspectives on the story, or explaining based on which prior information specific reasoning steps have been taken.  
+
+In fact, the conceptual foundations and technical architecture that are required for the referent-based extraction of narratives and the automatic creation, extension and annotation of PICO graphs is to a large extent the same. We concluded that the PICO graphs are good to use in a first phase as the domain is more restricted and that gold annotations are abundantly available. In a second phase, we could work towards a new benchmark on the extraction of narratives from stories (T3.1 + T3.4).
+
+This repository contains: 
+
+/resources:
+- example systematic reviews from the biomedical domain
+- the PICO ontology (semantic script) 
+- the annotations of the systematic reviews with the PICO ontology (small narrative graph, in accordance with the semantic script)
+
+Online resources: 
+
+[The PICO ontology documentation](https://linkeddata.cochrane.org/pico-ontology#d4e27)
+[The Cochrane Linked Data vocabulary](https://data.cochrane.org/concepts/)
+
+""",
+        "Microproject combining work from Brussels with work from Amsterdam. More concretely: using Brussel's semantic frame extractor to annotate biomedical texts using a semantic schema and linked data, resulting in biomedical narrative graphs.  " ;
+    ns1:hasAcknowledgments """This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement
+number 951846. 
+
+---
+
+
+""" ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/PICO-frameExtraction/releases"^^xsd:anyURI ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/PICO-frameExtraction> ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/PICO-frameExtraction/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/PICO-frameExtraction" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/PICO-frameExtraction/main/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/PICO-frameExtraction> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/PICO-frameExtraction/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/PICO-frameExtraction> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/PICO-frameExtraction"^^xsd:anyURI ;
+    ns1:name "muhai-project/PICO-frameExtraction" ;
+    ns1:programmingLanguage "Common Lisp" .
+
+<https://w3id.org/okn/i/Software/python-kafka-example> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/python-kafka-example> ;
+    ns1:dateCreated "2021-01-19T22:03:26+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2021-01-19T23:40:47+00:00"^^xsd:dateTime ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/python-kafka-example/releases"^^xsd:anyURI ;
+    ns1:hasLongName "Apache Kafka example for Python" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/python-kafka-example> ;
+    ns1:hasUsageNotes """##Getting started
+Setup your free Apache Kafka instance here: https://www.cloudkarafka.com
+
+Configuration
+
+* `export CLOUDKARAFKA_BROKERS="host1:9094,host2:9094,host3:9094"`
+  Hostnames can be found in the Details view in for your CloudKarafka instance.
+* `export CLOUDKARAFKA_USERNAME="username"`
+  Username can be found in the Details view in for your CloudKarafka instance.
+* `export CLOUDKARAFKA_PASSWORD="password"`
+  Password can be found in the Details view in for your CloudKarafka instance.
+* `export CLOUDKARAFKA_TOPIC="username-topic"`
+  Topic should be the same as your username followed by a dash before the topic.
+* `export CONSUMER_GROUP="your-name"`
+  Unique consumer group for multiple users in the tutorial. 
+
+These export commands must be run in both of the terminal windows below.
+
+```
+git clone https://github.com/muhai-project/python-kafka-example.git
+cd python-kafka-example`
+pip install confluent_kafka
+python consumer.py
+```
+
+Open another terminal window and `cd` into same directory and run `python producer.py`.
+Send your messages by pressing your system's EOF key sequence. (ctrl-d in bash)
+##Adding a Root CA
+In some cases the CloudKarafka Root CA may need to be manually added to the example, particularly if you are seeing the error:
+```
+Failed to verify broker certificate: unable to get local issuer certificate 
+```
+returned when you run the example. If this is the case you will need to download the [CloudKarakfa Root CA from our FAQ page](https://www.cloudkarafka.com/docs/faq.html) and place it in the python-kafka-example directory, then add the following line into the `conf {...}` section:
+```
+'ssl.ca.location': 'cloudkarafka.ca'
+```
+This should resolve the error and allow for successful connection to the server.
+""" ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/python-kafka-example/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/python-kafka-example" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/python-kafka-example/master/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/python-kafka-example> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/MIT> ;
+    ns1:name "MIT License" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/python-kafka-example/master/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/python-kafka-example> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/python-kafka-example"^^xsd:anyURI ;
+    ns1:name "muhai-project/python-kafka-example" ;
+    ns1:programmingLanguage "Python" .
+
+<https://w3id.org/okn/i/Software/recipe-execution-benchmark> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/recipe-execution-benchmark> ;
+    ns1:dateCreated "2024-09-12T19:28:25+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-13T07:28:33+00:00"^^xsd:dateTime ;
+    ns1:description """The directory [data](data) contains the recipe texts which are meant to serve as test input for developed natural language understanding models and the gold standard solutions which are their ideal output. In addition to the ideal semantic network, gold standard files have also been included that specify which sentence has led to certain cooking operations being included in the network. This has mostly been added to provide further insight when analyzing test results after development. Some example recipe texts with annotations and comments are provided in the [documentation](documentation) directory for use during development.   
+The directory [metadata](metadata) contains the online sources of all recipe data, including the date on which they were retrieved.
+ 
+""",
+        """This benchmark for recipe understanding in autonomous agents aims to support progressing the domain of natural language understanding by providing a setting in which performance can be measured on the everyday human activity of cooking. Showing deep understanding of such an activity requires both linguistic and extralinguistic skills, including reasoning with domain knowledge. For this goal, the benchmark provides a number of recipes written in natural (human) English that should be converted to a procedural semantic network of cooking operations that can be interpreted and executed by autonomous agents. A system, which supports one-click installation and execution, is also included that can perform recipe execution tasks in simulation allowing both analysis and evaluation of predicted networks. The provided evaluation metrics are mostly simulation-based, because demonstrating deep understanding of recipes can be done by effectively taking all the appropriate actions required for cooking the intended dish.
+ 
+""",
+        """To facilitate the evaluation, we also developed a standalone one-click executable. Due to file size limits, the executables could not be included in this repository. Instead, they are available for download via these links: [for Mac OS](https://ehai.vub.ac.be/recipe-execution-benchmark/assets/zips/cookingbot-evaluator-intel-mac.zip), [for Windows](https://ehai.vub.ac.be/recipe-execution-benchmark/assets/zips/cookingbot-evaluator-windows.zip), [for Linux](https://ehai.vub.ac.be/recipe-execution-benchmark/assets/zips/cookingbot-evaluator-linux.zip). More information about how to use this executable can be found in the [documentation](documentation) directory, including example solution files with explained result interpretations. 
+The directory [libs](libs) contains the Python library Smatch, which is required in case the executable should compute Smatch Score during evaluation. The path to this Smatch library should be given as a parameter to the executable. Again, more information about this is given in the [documentation](documentation). 
+ 
+""" ;
+    ns1:hasAcknowledgments "This research received funding from the EU’s H2020 RIA programme under grant agreement no. 951846 (MUHAI), the Research Foundation Flanders (FWO) through a post-doctoral grant awarded to PVE (grant no. 76929), and from the Collaborative Research Center (SFB) 1320 EASE – Everyday Activity Science and Engineering, University of Bremen (www.ease-crc.org), sub-project P01 \"Embodied Semantics for the Language of Action and Change\"." ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/recipe-execution-benchmark/releases"^^xsd:anyURI ;
+    ns1:hasLongName "Recipe Execution Benchmark" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/recipe-execution-benchmark> ;
+    ns1:hasSupportScriptLocation "https://raw.githubusercontent.com/muhai-project/recipe-execution-benchmark/master/documentation/examples/script/run-example.sh"^^xsd:anyURI ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/recipe-execution-benchmark/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/recipe-execution-benchmark" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/recipe-execution-benchmark/master/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/recipe-execution-benchmark> a schema:CreativeWork .
+
+<https://w3id.org/okn/i/SoftwareSource/recipe-execution-benchmark> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/recipe-execution-benchmark"^^xsd:anyURI ;
+    ns1:name "muhai-project/recipe-execution-benchmark" ;
+    ns1:programmingLanguage "Python" .
+
+<https://w3id.org/okn/i/Software/RePEc_inequality_narratives> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/RePEc_inequality_narratives> ;
+    ns1:dateCreated "2022-05-25T17:24:01+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2022-05-25T17:24:01+00:00"^^xsd:dateTime ;
+    ns1:description """This repostiory contains the list of Tweet IDs of the Tweets about inequality published by economists in the RePEc list. 
+This dataset has been collected for the [MUHAI project](https://muhai.univiu.org/), in relation to the creation of a  social inequality observatory. 
+This dataset is used in the working paper titled "How RePEc economists conceptualise and discuss inequalities on Twitter", by Carlo R. M. A. Santagiustina. <br><br>
+Tweets in this dataset can be freely retrieved, with their IDs, using the GET /2/tweets/:id API endpoint (more info at this link: https://developer.twitter.com/en/docs/twitter-api/tweets/lookup/api-reference/get-tweets-id).<br><br>
+These Twitter posts were published from the beginning of January 2010 to the end of July 2021, and were collected with R using the [Twitter FullArchive API endpoint V2](https://developer.twitter.com/en/docs/twitter-api/tweets/search/quick-start/full-archive-search). <br><br>
+Our Twitter query was based on the [RePEc economists](https://twitter.com/i/lists/1087053821786947584/members) Twitter list of profiles and the following keyword filtering conditions: (unequal OR inequal OR inequalities OR inequality OR iniquity OR iniquities OR iniquitous OR disparity) lang:en -is:retweet from: [iterate on users in the RePEc economists list]<br><br> 
+""",
+        "dataset of Tweets by RePEc economists related to inequality narratives" ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/RePEc_inequality_narratives/releases"^^xsd:anyURI ;
+    ns1:hasLongName "DATASET: RePEc inequality narratives on Twitter" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/RePEc_inequality_narratives> ;
+    ns1:hasVersion <https://w3id.org/okn/i/Release/67827758> ;
+    ns1:identifier "https://sandbox.zenodo.org/badge/latestdoi/496327256"^^xsd:anyURI ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/RePEc_inequality_narratives/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/RePEc_inequality_narratives" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/RePEc_inequality_narratives/main/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/Agent/carlosantagiustina> a schema:Person ;
+    schema:name "carlosantagiustina" .
+
+<https://w3id.org/okn/i/License/RePEc_inequality_narratives> a schema:CreativeWork .
+
+<https://w3id.org/okn/i/Release/67827758> a ns1:SoftwareVersion ;
+    ns1:author <https://w3id.org/okn/i/Agent/carlosantagiustina> ;
+    ns1:dateCreated "2022-05-25T17:34:10+00:00"^^xsd:dateTime ;
+    ns1:datePublished "2022-05-25T17:37:25+00:00"^^xsd:dateTime ;
+    ns1:description """First release of the DATASET containing tweet IDs related to RePEc inequality narratives on Twitter\r
+""" ;
+    ns1:downloadUrl "https://api.github.com/repos/muhai-project/RePEc_inequality_narratives/tarball/V1"^^xsd:anyURI,
+        "https://api.github.com/repos/muhai-project/RePEc_inequality_narratives/zipball/V1"^^xsd:anyURI,
+        "https://github.com/muhai-project/RePEc_inequality_narratives/releases/tag/V1"^^xsd:anyURI ;
+    ns1:hasVersionId "V1" ;
+    ns1:name "V1" ;
+    ns1:url "https://api.github.com/repos/muhai-project/RePEc_inequality_narratives/releases/67827758"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/RePEc_inequality_narratives> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/RePEc_inequality_narratives"^^xsd:anyURI ;
+    ns1:name "muhai-project/RePEc_inequality_narratives" .
+
+<https://w3id.org/okn/i/Software/shared_query_understanding> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/shared_query_understanding> ;
+    ns1:contactDetails "Nikolaos Kondylidis" ;
+    ns1:dateCreated "2023-09-15T14:06:39+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-12T08:07:42+00:00"^^xsd:dateTime ;
+    ns1:description "22-02-2023",
+        """This is the code for the paper accepted for publication to AAMAS 2023: "Establishing Shared Query Understanding in an Open Multi-Agent System".
+The experimental setup allows the development and evaluation of agent policies, that attempt to explain a query term to each other, over grounded communication.""",
+        """This repository contains the code for reproducing the experimental results presented in the paper 
+[Optional] Replicating the data pre-processing: 
+The directory "dataset" already contains all preprocessed data needed to run the experiments. In case you want to replicate that process as well, you need to follow the next steps before running the experiments: 
+We do this because we RDFLib for our experiments which does not provide reasoning tools.
+We performed this step manually using Protégé, (https://protege.stanford.edu/), and unfortunately we do not provide some straightforward command lines to replicate it.
+You can by-pass this step by copying our provided and execute: 
+We need to create more instance alignments across pairs of ontologies in order to perform more experiments using more provided concept alignments. To do so, please execute: 
+""" ;
+    ns1:hasAcknowledgments "This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement number 951846, the Vrije Universiteit Amsterdam. We want to thank Frank van Harmelen for his continuous support and guidance." ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/shared_query_understanding/releases"^^xsd:anyURI ;
+    ns1:hasExecutableInstructions """i) Create the dataset directory: 
+    mkdir dataset
+ 
+ii) Download and unzip the original OA4QA track dataset (http://oaei.ontologymatching.org/2015/oa4qa/index.html):
+ 
+    wget http://oaei.ontologymatching.org/2015/oa4qa/oaei2015_oa4qa_bundle.zip
+    mv oaei2015_oa4qa_bundle.zip data_preparation/oaei2015_oa4qa_bundle.zip
+    unzip data_preparation/oaei2015_oa4qa_bundle.zip -d data_preparation/
+    
+iii) Translate their provided concept alignments to RDF OWL 
+    python3 generate_instance_alignments_for_extended_dataset.py 
+""" ;
+    ns1:hasExecutionCommand """i) Create the dataset directory: 
+    mkdir dataset
+ 
+ii) Download and unzip the original OA4QA track dataset (http://oaei.ontologymatching.org/2015/oa4qa/index.html):
+ 
+    wget http://oaei.ontologymatching.org/2015/oa4qa/oaei2015_oa4qa_bundle.zip
+    mv oaei2015_oa4qa_bundle.zip data_preparation/oaei2015_oa4qa_bundle.zip
+    unzip data_preparation/oaei2015_oa4qa_bundle.zip -d data_preparation/
+    
+iii) Translate their provided concept alignments to RDF OWL 
+    python3 generate_instance_alignments_for_extended_dataset.py 
+""" ;
+    ns1:hasInstallationInstructions """To replicate the experiment results you need to first clone this repository and then "move" to that directory, by executing: 
+    git clone https://github.com/kondilidisn/shared_query_understanding
+    cd shared_query_understanding 
+You can create a new python environment and install all libraries mentioned in requirements.txt by executing: 
+    python3 -m venv venv/
+    source venv/bin/activate
+    pip3 install -r requirements.txt 
+The directory "dataset" already contains all preprocessed data needed to run the experiments. In case you want to replicate that process as well, you need to follow the next steps before running the experiments: 
+    mkdir dataset
+ 
+ii) Download and unzip the original OA4QA track dataset (http://oaei.ontologymatching.org/2015/oa4qa/index.html):
+ 
+    wget http://oaei.ontologymatching.org/2015/oa4qa/oaei2015_oa4qa_bundle.zip
+    mv oaei2015_oa4qa_bundle.zip data_preparation/oaei2015_oa4qa_bundle.zip
+    unzip data_preparation/oaei2015_oa4qa_bundle.zip -d data_preparation/
+    
+iii) Translate their provided concept alignments to RDF OWL 
+We do this because we RDFLib for our experiments which does not provide reasoning tools.
+We performed this step manually using Protégé, (https://protege.stanford.edu/), and unfortunately we do not provide some straightforward command lines to replicate it.
+You can by-pass this step by copying our provided and execute: 
+    mkdir dataset/reasoned_ontologies
+    cp -r data_preparation/reasoned_ontologies/ dataset/reasoned_ontologies/
+    
+v) Create Instance Alignments for extended dataset experiments. 
+    python3 generate_instance_alignments_for_extended_dataset.py 
+""",
+        """https://arxiv.org/abs/2305.09349, https://dl-acm-org.vu-nl.idm.oclc.org/doi/10.5555/3545946.3598649 
+""",
+        """https://github.com/muhai-project/shared_query_understanding 
+""" ;
+    ns1:hasLongName "Acknowledgement:" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/shared_query_understanding> ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/shared_query_understanding/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/shared_query_understanding" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/shared_query_understanding/main/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/shared_query_understanding> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/shared_query_understanding/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/shared_query_understanding> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/shared_query_understanding"^^xsd:anyURI ;
+    ns1:name "muhai-project/shared_query_understanding" ;
+    ns1:programmingLanguage "Python" .
+
+<https://w3id.org/okn/i/Software/soma> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/soma> ;
+    ns1:dateCreated "2022-02-16T13:25:35+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2022-04-12T08:43:43+00:00"^^xsd:dateTime ;
+    ns1:description """SOMA -- the **SO**cio-physical **M**odel of **A**ctivities -- is an ontological model of activities that attempts to equip robotic agents with abstract knowledge to make them perform activities in a more flexible and robust manner.
+*Sôma* is also a word for *body* derived from Ancient Greek, and *body* being a central aspect in this model due to severe difficulties of controlling the body of an agent in the physical world.
+More concretely, the scope of SOMA is how agents interact with their environment in terms of what are their intentions, what is their plan, how do they move, and how do they get into contact with each other or items in the environment. 
+SOMA is fully implemented in form of an OWL ontology which is based on the DOLCE+DnS Ultralite (DUL) upper-level ontology.
+[DUL](http://www.ontologydesignpatterns.org/ont/dul/DUL.owl) is a carefully designed upper-level ontology that seeks to model general categories underlying human cognition without making any discipline-specific assumptions.
+Our extensions mainly focus on characterizing different aspects of activities that were not considered sufficiently in DUL for the scope of autonomous robotics.
+ 
+""",
+        "The Socio-physical Model of Activities (SOMA) is a formal activity model for embodied agents that need to operate their body to generate motions that cause intentional effects in the physical and social world." ;
+    ns1:hasBuildFile "https://raw.githubusercontent.com/muhai-project/soma/master/.github/actions/convert/Dockerfile"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/soma/master/.github/actions/hermit/Dockerfile"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/soma/master/.github/actions/pythonlatex/Dockerfile"^^xsd:anyURI ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/soma/releases"^^xsd:anyURI ;
+    ns1:hasLongName "SOMA" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/soma> ;
+    ns1:hasSupportScriptLocation "https://raw.githubusercontent.com/muhai-project/soma/master/scripts/OntoMetrics.sh"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/soma/master/scripts/ecv.sh"^^xsd:anyURI ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/soma/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/soma" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/soma/master/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/soma> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/LGPL-3.0> ;
+    ns1:name "GNU Lesser General Public License v3.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/soma/master/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/soma> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/soma"^^xsd:anyURI ;
+    ns1:name "muhai-project/soma" ;
+    ns1:programmingLanguage "Dockerfile",
+        "Java",
+        "Prolog",
+        "Python",
+        "Shell" .
+
+<https://w3id.org/okn/i/Software/VR-kitchen> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/VR-kitchen> ;
+    ns1:contactDetails "Rachel Ringe, rringe@uni-bremen.de" ;
+    ns1:dateCreated "2024-09-13T08:22:21+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-09-13T08:49:11+00:00"^^xsd:dateTime ;
+    ns1:description """The MUHAI VR Kitchen is a virtual reality (VR) environment for interacting with a visual representation of a robotic cooking assistant.
+This VR application is used to observe humans during cooperative cooking with an artificial partner and was developed for the Oculus Quest 2 and 3 HMD in the Unity game engine. In this application, the user is placed in a virtual kitchen containing a virtual robot. The objects in the kitchen can be interacted with using both hands or controllers. Various tasks can be completed by grabbing tools or ingredients and moving them in the correct way, e.g., tilting a bag of sugar to pour the contents into a bowl or moving a knife’s blade in a downward motion through an ingredient. Additionally, the robot can be ordered to fulfill any cooking tasks needed for recipe completion – e.g., mixing the ingredients in a bowl – as well as supporting actions such as cleaning surfaces, removing trash like vegetable peels, or fetching objects the user has requested.
+These orders can be given through a delegation-type interface where the user can give the robot an order in a declarative manner but is not required to provide any details on how the task should be accomplished. This interface is affordance-based, meaning it shows the user the possible actions that the robot could accomplish using the chosen object. If an order is given that requires more than one parameter, all the other possible objects that could be used in combination are highlighted e.g. picking the action ``Portion ingredient'' used on a bag of flour will then highlight all possible target containers for the ingredient.
+The VR environment is mirrored in the [abe_sim](https://github.com/mpomarlan/abe_sim) mental simulation and serves as an interface for it. A working installation of abe_sim as well as a Meta Quest VR Headset and a windows operating system are necessary to run the application.""",
+        """set of terms used to commonly identify a software component 
+""" ;
+    ns1:hasAcknowledgments "This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement number 951846." ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/VR-kitchen/releases"^^xsd:anyURI ;
+    ns1:hasInstallationInstructions """##Installation instructions:
+1. Clone Repository from Github
+2. Connect Meta Quest Headset to PC via Quest Link
+3. Start abe_sim
+4. Start VR Kitchen Executable""",
+        """https://github.com/muhai-project 
+""" ;
+    ns1:hasLongName "Acknowledgement:" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/VR-kitchen> ;
+    ns1:hasUsageNotes """##Usage examples:
+The VR enviroment can be used to run user studies on Human-Robot-Collaboration in a kitchen environment.
+""" ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/VR-kitchen/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/VR-kitchen" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/VR-kitchen/main/README.md"^^xsd:anyURI ;
+    ns1:softwareRequirements """* Meta Quest Headset + Meta Quest Link installed
+* Windows Operating System
+* Working Installation of Abe_Sim""" ;
+    ns1:supportDetails "E-Mail: rringe@uni-bremen.de",
+        "When encountering any problems with the software please contact Rachel Ringe (University of Bremen) at rringe@uni-bremen.de." .
+
+<https://w3id.org/okn/i/License/VR-kitchen> a schema:CreativeWork .
+
+<https://w3id.org/okn/i/SoftwareSource/VR-kitchen> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/VR-kitchen"^^xsd:anyURI ;
+    ns1:name "muhai-project/VR-kitchen" .
+
+<https://w3id.org/okn/i/Software/wikipedia_data_social_inequality> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/wikipedia_data_social_inequality> ;
+    ns1:dateCreated "2022-05-24T12:10:41+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2022-05-24T12:42:36+00:00"^^xsd:dateTime ;
+    ns1:description """This repository contains all versions (until 01/02/2022) of the "social inequality" page from en.wikipedia.org to be used in the social inequality observatory of the [MUHAI](https://muhai.univiu.org/) project. 
+""",
+        "This repository contains all versions of the \"social inequality\" page from en.wikipedia.org" ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/wikipedia_data_social_inequality/releases"^^xsd:anyURI ;
+    ns1:hasLongName "wikipedia data from the social inequality page in english" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/wikipedia_data_social_inequality> ;
+    ns1:hasVersion <https://w3id.org/okn/i/Release/67659341> ;
+    ns1:identifier "https://sandbox.zenodo.org/badge/latestdoi/495807291"^^xsd:anyURI ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/wikipedia_data_social_inequality/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/wikipedia_data_social_inequality" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/wikipedia_data_social_inequality/main/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/Agent/carlosantagiustina> a schema:Person ;
+    schema:name "carlosantagiustina" .
+
+<https://w3id.org/okn/i/License/wikipedia_data_social_inequality> a schema:CreativeWork .
+
+<https://w3id.org/okn/i/Release/67659341> a ns1:SoftwareVersion ;
+    ns1:author <https://w3id.org/okn/i/Agent/carlosantagiustina> ;
+    ns1:dateCreated "2022-05-24T12:56:52+00:00"^^xsd:dateTime ;
+    ns1:datePublished "2022-05-24T12:57:40+00:00"^^xsd:dateTime ;
+    ns1:description "First release version of the dataset containing all versions of the \"social inequality\" page from en.wikipedia.org" ;
+    ns1:downloadUrl "https://api.github.com/repos/muhai-project/wikipedia_data_social_inequality/tarball/V1"^^xsd:anyURI,
+        "https://api.github.com/repos/muhai-project/wikipedia_data_social_inequality/zipball/V1"^^xsd:anyURI,
+        "https://github.com/muhai-project/wikipedia_data_social_inequality/releases/tag/V1"^^xsd:anyURI ;
+    ns1:hasVersionId "V1" ;
+    ns1:name "V1" ;
+    ns1:url "https://api.github.com/repos/muhai-project/wikipedia_data_social_inequality/releases/67659341"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/wikipedia_data_social_inequality> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/wikipedia_data_social_inequality"^^xsd:anyURI ;
+    ns1:name "muhai-project/wikipedia_data_social_inequality" ;
+    ns1:programmingLanguage "R" .
+
+<https://w3id.org/okn/i/Software/okg> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/okg> ;
+    ns1:contactDetails "Inès Blin" ;
+    ns1:dateCreated "2024-07-22T14:34:17+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-07-22T14:36:31+00:00"^^xsd:dateTime ;
+    ns1:description "22-07-2024",
+        """OKG: A Knowledge Graph for Social Media Discourse Analysis on Inequality 
+""",
+        "The OKG dataset",
+        "The OKG is a resource KG that integrates tweet metadata with its content, including named entities, dependencies and frame semantics." ;
+    ns1:hasAcknowledgments "This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement number 951846, the Sony Computer Science Laboratories-Paris, the Vrije Universiteit Amsterdam, the University of Bremen, and the Venice International University. C.S. acknowledges financial support from PON R&I 2014–2020 (FSE REACT-EU). We thank Frank van Harmelen, Annette ten Teije and Ilaria Tiddi for fruitful discussions." ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/okg/releases"^^xsd:anyURI ;
+    ns1:hasInstallationInstructions """https://github.com/muhai-project/okg 
+""" ;
+    ns1:hasLongName "Acknowledgement:" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/okg> ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/okg/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/okg" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/okg/main/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/okg> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/okg/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/okg> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/okg"^^xsd:anyURI ;
+    ns1:name "muhai-project/okg" .
+
+<https://w3id.org/okn/i/Software/understanding_ingredient_substitutions_book_chapter_code> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/understanding_ingredient_substitutions_book_chapter_code> ;
+    ns1:contactDetails """Nikolaos Kondylidis
+""" ;
+    ns1:dateCreated "2024-09-06T11:35:49+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-10-06T12:39:54+00:00"^^xsd:dateTime ;
+    ns1:description "14-07-2023",
+        """This code allows to replicate the experiments presented in the cpater "Understanding Ingredient Substitutions" of the Second Book of the MUHAI Project regarding understanding everyday activities.
+""",
+        """This repository contains the code surrounding Understanding Ingredient Substitution Experiments, in the context of an agent interacting with a human chef in order to learn how to perform ingredient substitution. 
+The code supports the exploration and use of the Recipe1M dataset and Recipe1Msubs benchmark.
+Additionally, it utilizes a GraphDB interface to query the FoodKG knowledge graph.
+They are all put together to create a grounded version of the Recipe1MSubs, where the data (recipes and ingredients) are defined in Internationalized Resource Identifiers (IRI)s.
+Moreover, the ignredients are related with FoodOn concepts, enabling the agent to develop and human-centric understanding of provided ingredient substitution examples.
+The experimental setup uses this produced grounded version of Recipe1MSubs, to test and evaluate different agent policies. 
+""" ;
+    ns1:hasAcknowledgments "This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement number 951846, the Vrije Universiteit Amsterdam and Bremen University. We thank Ilaria Tiddi, Annette ten Teije and Frank van Harmelen for their continuous support and guidance." ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code/releases"^^xsd:anyURI ;
+    ns1:hasExample "https://raw.githubusercontent.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code/master/.ipynb_checkpoints/USDA_exploration-checkpoint.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code/master/USDA_exploration.ipynb"^^xsd:anyURI ;
+    ns1:hasExecutableNotebook "https://raw.githubusercontent.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code/master/.ipynb_checkpoints/USDA_exploration-checkpoint.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code/master/USDA_exploration.ipynb" ;
+    ns1:hasInstallationInstructions """https://github.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code 
+""" ;
+    ns1:hasLongName "Acknowledgement" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/understanding_ingredient_substitutions_book_chapter_code> ;
+    ns1:hasSupportScriptLocation "https://raw.githubusercontent.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code/master/run_tensorboard.sh"^^xsd:anyURI ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/understanding_ingredient_substitutions_book_chapter_code/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/understanding_ingredient_substitutions_book_chapter_code" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code/master/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/understanding_ingredient_substitutions_book_chapter_code> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code/master/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/understanding_ingredient_substitutions_book_chapter_code> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/understanding_ingredient_substitutions_book_chapter_code"^^xsd:anyURI ;
+    ns1:name "muhai-project/understanding_ingredient_substitutions_book_chapter_code" ;
+    ns1:programmingLanguage "Jupyter Notebook",
+        "Python",
+        "Shell" .
+
+<https://w3id.org/okn/i/Software/obio> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/obio> ;
+    ns1:contactDetails "Inès Blin" ;
+    ns1:dateCreated "2024-07-22T14:27:20+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-07-22T14:37:02+00:00"^^xsd:dateTime ;
+    ns1:description "22-07-2024",
+        """OKG: A Knowledge Graph for Social Media Discourse Analysis on Inequality 
+""",
+        "The OBIO ontology",
+        "The OBservatory Integrated Ontology (OBIO) ontology is designed to integrate tweet metadata with various types of linguistic knowledge and Linked Open Data (LOD), such as named entities, dependencies, and frame semantics." ;
+    ns1:hasAcknowledgments "This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement number 951846, the Sony Computer Science Laboratories-Paris, the Vrije Universiteit Amsterdam, the University of Bremen, and the Venice International University. C.S. acknowledges financial support from PON R&I 2014–2020 (FSE REACT-EU). We thank Frank van Harmelen, Annette ten Teije and Ilaria Tiddi for fruitful discussions." ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/obio/releases"^^xsd:anyURI ;
+    ns1:hasInstallationInstructions """https://github.com/muhai-project/obio 
+""",
+        """https://w3id.org/okg/obio-ontology/ 
+""" ;
+    ns1:hasLongName "Acknowledgement:" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/obio> ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/obio/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/obio" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/obio/main/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/obio> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/obio/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/obio> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/obio"^^xsd:anyURI ;
+    ns1:name "muhai-project/obio" .
+
+<https://w3id.org/okn/i/Software/okg_media_discourse> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/okg_media_discourse> ;
+    ns1:contactDetails "Inès Blin" ;
+    ns1:dateCreated "2023-08-23T13:30:41+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-10-03T19:11:02+00:00"^^xsd:dateTime ;
+    ns1:description "17-01-2023",
+        """OKG: A Knowledge Graph for Social Media Discourse Analysis on Inequality 
+""",
+        """Snippets of code contained in the repository
+The `src/main.py` file runs all the components in the pipeline.
+1. **Build KG directly from the triples**: `src/build_kg/build_kg_from_triples.py`
+2. **Extract descriptions (tweet content)**: `src/features/get_description_pred.py`
+3. **Pre-processing**: `src/features/pre_process.py`
+4. **Extract frames with PropBank grammar**: `src/features/call_pb_grammar.py`
+5. **Extract other features (sentiment, etc)**: `src/features/extract_other_features.py`
+6. **Build graph from PropBank output + metrics**: `src/build_kg/build_kg_from_pb.py`
+7. **Build the graph that links nif:Structure nodes**: `src/build_kg/add_super_string.py`# Support channels:  
+""",
+        """This is the code for the paper accepted for publication to K-CAP 2023: "OKG: A Knowledge Graph for Social Media Discourse Analysis on Inequality". 
+""",
+        "This is the code for the paper accepted for publication to K-CAP 2023: \"OKG: A Knowledge Graph for Social Media Discourse Analysis on Inequality\". It enables to build a KG from a set of tweets and its metadata.",
+        """We used the [Widoco](https://github.com/dgarijo/Widoco) Wizard for documenting our ontology. 
+""" ;
+    ns1:hasAcknowledgments "This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement number 951846,  the Sony Computer Science Laboratories-Paris, the Vrije Universiteit Amsterdam, the University of Bremen, and the Venice International University. C.S. acknowledges financial support from PON R\\&I 2014–2020 (FSE REACT-EU). We thank Frank van Harmelen, Annette ten Teije and Ilaria Tiddi for fruitful discussions." ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/okg_media_discourse/releases"^^xsd:anyURI ;
+    ns1:hasExecutableInstructions """If you have one `.csv` file:
+```python
+python src/main.py -p <input-event-csv-file> -o <output-folder>
+``` 
+If you have a folder of `.csv` file:
+```python
+python src/main.py -f <input-event-folder-csv-file> -o <output-folder>
+```
+ 
+""",
+        """Snippets of code contained in the repository
+The `src/main.py` file runs all the components in the pipeline.
+1. **Build KG directly from the triples**: `src/build_kg/build_kg_from_triples.py`
+2. **Extract descriptions (tweet content)**: `src/features/get_description_pred.py`
+3. **Pre-processing**: `src/features/pre_process.py`
+4. **Extract frames with PropBank grammar**: `src/features/call_pb_grammar.py`
+5. **Extract other features (sentiment, etc)**: `src/features/extract_other_features.py`
+6. **Build graph from PropBank output + metrics**: `src/build_kg/build_kg_from_pb.py`
+7. **Build the graph that links nif:Structure nodes**: `src/build_kg/add_super_string.py`# Support channels:  
+""" ;
+    ns1:hasExecutionCommand """If you have one `.csv` file:
+```python
+python src/main.py -p <input-event-csv-file> -o <output-folder>
+``` 
+If you have a folder of `.csv` file:
+```python
+python src/main.py -f <input-event-folder-csv-file> -o <output-folder>
+```
+ 
+""",
+        """Snippets of code contained in the repository
+The `src/main.py` file runs all the components in the pipeline.
+1. **Build KG directly from the triples**: `src/build_kg/build_kg_from_triples.py`
+2. **Extract descriptions (tweet content)**: `src/features/get_description_pred.py`
+3. **Pre-processing**: `src/features/pre_process.py`
+4. **Extract frames with PropBank grammar**: `src/features/call_pb_grammar.py`
+5. **Extract other features (sentiment, etc)**: `src/features/extract_other_features.py`
+6. **Build graph from PropBank output + metrics**: `src/build_kg/build_kg_from_pb.py`
+7. **Build the graph that links nif:Structure nodes**: `src/build_kg/add_super_string.py`# Support channels:  
+""" ;
+    ns1:hasInstallationInstructions """##Installation instructions
+First clone the repo
+```bash
+git clone https://github.com/muhai-project/okg_media_discourse
+```##Virtualenv
+Python version used: 3.10.6. We recommend to use a virtual environment.
+
+Install the requirements:
+```bash
+pip install -r requirements.txt
+```
+##Babel
+To install Babel (necessary to extract frames from the PropBank grammar), see and check guide from [here](https://gitlab.ai.vub.ac.be/ehai/babel).
+
+To start the PropBank server, run in your Common Lisp editor:
+```common lisp
+(load "/path/to/babel-development/grammars/propbank-grammar/web-service/start-server.lisp")
+```
+##Endpoint
+Possible to use the public API endpoint for Framester, but we strongly recommend to set up a local repository. You can download the data on [their website](https://framester.github.io). We used GraphDB to set up the local endpoint.
+
+##src/private.py
+Create a `src/private.py` file, and add the following variables:
+* `FOLDER_PATH`: path to the local repository
+* `API_PROPBANK_GRAMMAR`: API to call the PropBank grammar (by default: `http://127.0.0.1:1170/extract-frames`)
+* `SPARQL_ENDPOINT`: endpoint to Framester
+##Install
+Run the following for setting up the packages
+```bash
+python setup.py install
+python -m spacy download en_core_web_sm
+```
+##Troubleshooting
+- If you work on an Apple Silicon Machine + conda, you might later be prompted to download again `grpcio`, you can do it using:
+    ```bash
+    conda install grpcio=1.43.0 -c conda-forge
+    ```
+""",
+        """Snippets of code contained in the repository
+The `src/main.py` file runs all the components in the pipeline.
+1. **Build KG directly from the triples**: `src/build_kg/build_kg_from_triples.py`
+2. **Extract descriptions (tweet content)**: `src/features/get_description_pred.py`
+3. **Pre-processing**: `src/features/pre_process.py`
+4. **Extract frames with PropBank grammar**: `src/features/call_pb_grammar.py`
+5. **Extract other features (sentiment, etc)**: `src/features/extract_other_features.py`
+6. **Build graph from PropBank output + metrics**: `src/build_kg/build_kg_from_pb.py`
+7. **Build the graph that links nif:Structure nodes**: `src/build_kg/add_super_string.py`# Support channels:  
+""",
+        """To generate content from the Widoco software (from the `ontology` folder): 
+```bash
+java -jar widoco-1.4.19-jar-with-dependencies_JDK-17.jar -ontFile observatory.owl -outFolder obio -confFile config.properties -uniteSections
+``` 
+""",
+        """To run the pipeline, you need to have a `.csv` file with your triples, or a folder with such `.csv`. 
+If you have one `.csv` file:
+```python
+python src/main.py -p <input-event-csv-file> -o <output-folder>
+``` 
+If you have a folder of `.csv` file:
+```python
+python src/main.py -f <input-event-folder-csv-file> -o <output-folder>
+```
+ 
+""",
+        """https://github.com/muhai-project/okg_media_discourse 
+""" ;
+    ns1:hasLongName "OKG Pipeline" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/okg_media_discourse> ;
+    ns1:hasSupportScriptLocation "https://raw.githubusercontent.com/muhai-project/okg_media_discourse/main/clean.sh"^^xsd:anyURI ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/okg_media_discourse/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/okg_media_discourse" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/okg_media_discourse/main/README.md"^^xsd:anyURI ;
+    ns1:softwareRequirements "Cf. `requirements.txt` for Python requirements." .
+
+<https://w3id.org/okn/i/License/okg_media_discourse> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/Apache-2.0> ;
+    ns1:name "Apache License 2.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/okg_media_discourse/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/okg_media_discourse> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/okg_media_discourse"^^xsd:anyURI ;
+    ns1:name "muhai-project/okg_media_discourse" ;
+    ns1:programmingLanguage "CSS",
+        "HTML",
+        "JavaScript",
+        "Python",
+        "Shell" .
+
+<https://w3id.org/okn/i/Software/HERMIONE> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/HERMIONE> ;
+    ns1:dateCreated "2024-07-24T07:39:39+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-07-24T07:43:10+00:00"^^xsd:dateTime ;
+    ns1:description """
+Hermoine queries and consumes in real time data from MUHAI's Observatory Knowledge Graph. Source code and more information about the OKG is available at this link: 
+""",
+        """
+The HERMIONE shiny dashboard, developed as part of the Social Inequality Observatory of the MUHAI project, allows you to interactively filter and explore co-occurrence entity networks, fine-grained narratives analysis, and case studies on inequality perception using online data from Twitter, collected in MUHAI's Observatory Knowledge Graph. 
+With HERMIONE you can: (i) Gain insights into how specific forms of inequality are perceived, and understood across time and contexts. (ii) Understand reactions and dialectical challenges to inequality by individuals, institutions, and organizations. (iii) Access powerful methods for retrieving, filtering, aggregating, and analyzing online debates about inequality from different perspectives. 
+""" ;
+    ns1:hasBuildFile "https://raw.githubusercontent.com/muhai-project/HERMIONE/main/Dockerfile"^^xsd:anyURI ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/HERMIONE/releases"^^xsd:anyURI ;
+    ns1:hasExecutableInstructions """---
+output:
+  github_document:
+    toc: true
+--- 
+""",
+        """This is a basic example which shows you how to solve a common problem:
+
+```{r, eval = FALSE}
+#Load Hermione library
+library(Hermione)
+#run Hermione app
+Hermione::run_app()
+#Enjoy!
+```
+""" ;
+    ns1:hasExecutionCommand """---
+output:
+  github_document:
+    toc: true
+--- 
+""" ;
+    ns1:hasInstallationInstructions """##Installation
+You can install the development version of Hermione from GitHub (main branch) as follows:
+
+1. Install R (Version 4.2.2 or later) from here [https://cran.r-project.org/bin/](https://cran.r-project.org/bin/)
+
+2. Install R dependencies
+
+```
+R -e 'install.packages("remotes")'
+ Rscript -e 'remotes::install_version("httr",upgrade="never", version = "1.4.5")'
+ Rscript -e 'remotes::install_version("bslib",upgrade="never", version = "0.4.2")'
+ Rscript -e 'remotes::install_version("rmarkdown",upgrade="never", version = "2.20")'
+ Rscript -e 'remotes::install_version("knitr",upgrade="never", version = "1.41")'
+ Rscript -e 'remotes::install_version("promises",upgrade="never", version = "1.2.0.1")'
+ Rscript -e 'remotes::install_version("shiny",upgrade="never", version = "1.7.4")'
+ Rscript -e 'remotes::install_version("ggplot2",upgrade="never", version = "3.4.0")'
+ Rscript -e 'remotes::install_version("config",upgrade="never", version = "0.3.1")'
+ Rscript -e 'remotes::install_version("waiter",upgrade="never", version = "0.2.5")'
+ Rscript -e 'remotes::install_version("fresh",upgrade="never", version = "0.2.0")'
+ Rscript -e 'remotes::install_version("testthat",upgrade="never", version = "3.1.6")'
+ Rscript -e 'remotes::install_version("spelling",upgrade="never", version = "2.2.1")'
+ Rscript -e 'remotes::install_version("shiny.semantic",upgrade="never", version = "0.4.3")'
+ Rscript -e 'remotes::install_version("tidytext",upgrade="never", version = "0.4.1")'
+ Rscript -e 'remotes::install_version("visNetwork",upgrade="never", version = "2.1.2")'
+ Rscript -e 'remotes::install_version("ipc",upgrade="never", version = "0.1.4")'
+ Rscript -e 'remotes::install_version("tidyverse",upgrade="never", version = "1.3.2")'
+ Rscript -e 'remotes::install_version("DT",upgrade="never", version = "0.27")'
+ Rscript -e 'remotes::install_version("echarts4r",upgrade="never", version = "0.4.5")'
+ Rscript -e 'remotes::install_version("shinyjs",upgrade="never", version = "2.1.0")'
+ Rscript -e 'remotes::install_version("shinyWidgets",upgrade="never", version = "0.7.6")'
+ Rscript -e 'remotes::install_version("future",upgrade="never", version = "1.30.0")'
+ Rscript -e 'remotes::install_version("golem",upgrade="never", version = "0.3.5")'
+ Rscript -e 'remotes::install_version("bs4Dash",upgrade="never", version = "2.2.1")'
+ Rscript -e 'remotes::install_version("quanteda",upgrade="never", version = "3.2.4")'
+ Rscript -e 'remotes::install_version("quanteda.textplots",upgrade="never", version = "0.94.2")'
+ Rscript -e 'remotes::install_version("fmsb",upgrade="never", version = "0.7.5")'
+ Rscript -e 'remotes::install_github("lgnbhl/textyle@8bb208e52dcc6e364b6f903283c319f67d9980be")'
+``` 
+
+3. Install HERMIONE package
+
+```{r, eval = FALSE}
+library(remotes)
+remotes::install_github("carlosantagiustina/HERMIONE")
+```
+
+The app requires a token to access the backend (Observatory Knwledge Graph).
+You can request a token writing an email to [carlo.santagiustina@univiu.org](mailto:carlo.santagiustina@univiu.org).
+The app searches for a .txt file containing the token at the following path:
+/Users/[your-username]/HERMIONE_KEY.txt
+
+which is equivalent to the output of the R code:
+
+```{r, eval = FALSE}
+paste0(Sys.getenv("HOME"),"/HERMIONE_KEY.txt")
+```
+""",
+        """Hermione is also available in a dockerized version.
+To build the docker container please use the following command from the main folder of the project using your terminal/bash/console:
+```
+docker build . -t hermione 
+
+ docker run -p 127.0.0.1:8080:80 hermione
+```
+ 
+""" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/HERMIONE> ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/HERMIONE/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/HERMIONE" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/HERMIONE/main/README.Rmd"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/HERMIONE/main/README.md"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/License/HERMIONE> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/MIT> ;
+    ns1:name "MIT License" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/HERMIONE/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/HERMIONE> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/HERMIONE"^^xsd:anyURI ;
+    ns1:name "muhai-project/HERMIONE" ;
+    ns1:programmingLanguage "CSS",
+        "Dockerfile",
+        "HTML",
+        "R" .
+
+<https://w3id.org/okn/i/Software/chronographer> a ns1:Software ;
+    schema:license <https://w3id.org/okn/i/License/chronographer> ;
+    ns1:contactDetails "Inès Blin" ;
+    ns1:dateCreated "2024-07-22T14:39:09+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-07-22T14:56:28+00:00"^^xsd:dateTime ;
+    ns1:description "13-12-2021",
+        "ChronoGrapher is a 2-step method to build an event-centric knowledge graph automatically from another knowledge graph. The first step is a semantically-informed search in a generic knowledge graph, that is novel. The second step constructs event-centric knowledge graphs automatically.",
+        """We include some sample data in the `sample-data` folder.  
+Parameters that don't require additional data to be downloaded:
+* `rdf_type`: the type of nodes you want to retrieve. Keys should be a string, and values the string URI of that node type. In our experiments, we are mainly interested about events.
+* `predicate_filter`: list of predicates that are not taken into account for the search
+* `start`: node to start the search from
+* `start_date`: starting date of that `start` node
+* `end_date`: ending date of that `start` node
+* `iterations`: number of iterations for the search. The higher the number, the longer it will take to run.
+* `type_ranking`: the type of ranking to use for paths.
+* `type_interface`: type of interface used, in practice `hdt` only.
+* `type_metrics`: the metrics that are computed, should be a sub-list of `["precision", "recall", "f1"]`
+* `ordering` and `domain_range`: boolean, to activate or not this parameter
+* `filtering`: same than above
+* `name_exp`: name of your experiment, for the saving folder
+* `dataset_type`: type of dataset, depending on the one you have
+* `dataset_path`: path the the dataset folder 
+* `nested_dataset`: boolean, whether your dataset is nested (decomposed in smaller chunks) or not 
+Parameters that require additional data to be downloaded - c.f. section 4 for further details:
+* `gold_standard`: .csv path to the gold standard events
+* `referents`: .json path to the URI referents
+</details> 
+""" ;
+    ns1:hasAcknowledgments "This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement number 951846 and the Sony Computer Science Laboratories-Paris. We thank Frank van Harmelen for fruitful discussions." ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/chronographer/releases"^^xsd:anyURI ;
+    ns1:hasExample "https://raw.githubusercontent.com/muhai-project/chronographer/main/experiments_run/usage_ng/human_evaluation/analysis.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/chronographer/main/notebooks/eventkg-filtering.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/chronographer/main/notebooks/eventkg-info-one-event.ipynb"^^xsd:anyURI,
+        "https://raw.githubusercontent.com/muhai-project/chronographer/main/notebooks/eventkg-retrieving-events.ipynb"^^xsd:anyURI ;
+    ns1:hasExecutableNotebook "https://raw.githubusercontent.com/muhai-project/chronographer/main/experiments_run/usage_ng/human_evaluation/analysis.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/chronographer/main/notebooks/eventkg-filtering.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/chronographer/main/notebooks/eventkg-info-one-event.ipynb",
+        "https://raw.githubusercontent.com/muhai-project/chronographer/main/notebooks/eventkg-retrieving-events.ipynb" ;
+    ns1:hasInstallationInstructions """##Installation instructions:
+First clone the repo
+```bash
+git clone git@github.com:muhai-project/chronographer.git
+```
+
+We used Poetry and conda for virtual environment and dependency management.
+
+Interface and traversal implemented with **Python 3.10.6**.
+
+First set up your virtual environment and then download [Poetry](https://python-poetry.org) for dependencies.
+
+To [install dependencies only](https://python-poetry.org/docs/basic-usage/#installing-dependencies-only)
+```bash
+poetry install --no-root
+```
+
+Alternatively, you can use the [full path to the `poetry` binary](https://python-poetry.org/docs/#installation)
+> * `~/Library/"Application Support"/pypoetry/venv/bin/poetry` on MacOS.
+> * `~/.local/share/pypoetry/venv/bin/poetry` on Linux/Unix.
+> * `%APPDATA%\\pypoetry\\venv\\Scripts\\poetry` on Windows.
+> * `$POETRY_HOME/venv/bin/poetry` if `$POETRY_HOME` is set.
+
+If you work on an Apple Silicon Machine + conda, you might later be prompted to download again `grpcio`, you can do it using:
+```bash
+pip uninstall grpcio
+conda install grpcio
+```
+
+Create a `private.py` file in the settings folder and add the followings:
+* AGENT (of computer, for sparql interface) [optional]
+* TOKEN (for Triply) [optional]
+* FOLDER_PATH (of git repository on your machine)
+
+
+[For submission] We use an external package that is currently WIP, for the purpose of this submission we include it directly into this code. To run its dependencies, run: 
+```bash
+cd kglab && python setup.py install
+```
+ 
+Then run the following for setting up the packages
+```bash
+python setup.py install
+```
+---""",
+        """Before running the search, you need to extrac domain, range and superclasses information from the dataset you downloaded. See file `src/extract_domain_range.py` for further information and command lines to run that file, depending on your dataset. 
+The results will be saved in the `experiments` folder in the root directory, in a folder starting by `<date>-<dataset_type>-<name_exp>`. 
+You can change the content of this configuration file. Some changes can be immediate, some others will require some additional data download (c.f. Section 4 to add further data for the search). 
+""",
+        """git@github.com:muhai-project/chronographer.git 
+""" ;
+    ns1:hasLongName "ChronoGrapher: Event-centric KG Construction via Informed Graph Traversal" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/chronographer> ;
+    ns1:hasSupportScriptLocation "https://raw.githubusercontent.com/muhai-project/chronographer/main/clean.sh"^^xsd:anyURI ;
+    ns1:hasUsageNotes """##Usage examples:
+If you have downloaded DBpedia, Wikidata or YAGO, it is possible to run the search with any of the events that is both in [EventKG](https://eventkg.l3s.uni-hannover.de) and in your dataset. We used [EventKG 3.1.](https://zenodo.org/record/4720078#.Y0bn-S8Rr0o) in our experiments.
+
+We propose 3 notebooks in the `notebooks` folder to extract additional data to run the search. You will also need to download [GraphDB](./https://graphdb.ontotext.com) to set up a local SPARQL endpoint.""" ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/chronographer/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/chronographer" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/chronographer/main/README.md"^^xsd:anyURI ;
+    ns1:softwareRequirements "Cf. `requirements.txt`" .
+
+<https://w3id.org/okn/i/License/chronographer> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/GPL-3.0> ;
+    ns1:name "GNU General Public License v3.0" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/chronographer/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/chronographer> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/chronographer"^^xsd:anyURI ;
+    ns1:name "muhai-project/chronographer" ;
+    ns1:programmingLanguage "Jupyter Notebook",
+        "Python",
+        "Shell" .
+

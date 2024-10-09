@@ -26,6 +26,7 @@ const identifier = document.getElementById('identifier');
 const status_let = document.getElementById('status');
 const download = document.getElementById('download');
 const installation = document.getElementById('installation');
+//const dataset = document.getElementById('dataset');
 const license = document.getElementById('license');
 const notebook = document.getElementById('notebook');
 const requirements = document.getElementById('requirements');
@@ -34,6 +35,12 @@ const help = document.getElementById('help');
 const paper = document.getElementById('paper');
 const web = document.getElementById('web');
 const ontology = document.getElementById('ontology');
+
+const experienceAndData = document.getElementById('experienceanddata')
+const symbolicStructure = document.getElementById('symbolicstructure')
+const descriptiveMemories = document.getElementById('descriptivememories')
+const analysis = document.getElementById('analysis')
+const interpretation = document.getElementById('interpretation')
 
 const title = document.getElementById('title');
 const stars = document.getElementById('stars');
@@ -118,6 +125,16 @@ installation.addEventListener('click', () => {
     search(); 
 });
 
+// dataset.addEventListener('click', () => { 
+//     state_dataset = !state_dataset;
+//     if (state_dataset)
+//         dataset.classList.add("filter-selected");
+//     else dataset.classList.remove("filter-selected");
+//     current_page = 1;
+//     search(); 
+// });
+
+
 license.addEventListener('click', () =>{ 
     state_license = !state_license; 
     if (state_license)
@@ -183,6 +200,54 @@ ontology.addEventListener('click', () => {
     current_page = 1;
     search(); 
 });
+
+
+experienceAndData.addEventListener('click', () => { 
+    state_experienceanddata = !state_experienceanddata; 
+    if (state_experienceanddata)
+        experienceAndData.classList.add("filter-selected");
+    else experienceAndData.classList.remove("filter-selected");
+    current_page = 1;
+    search(); 
+});
+
+symbolicStructure.addEventListener('click', () => { 
+    state_symbolicstructure = !state_symbolicstructure; 
+    if (state_symbolicstructure)
+        symbolicStructure.classList.add("filter-selected");
+    else symbolicStructure.classList.remove("filter-selected");
+    current_page = 1;
+    search(); 
+});
+
+descriptiveMemories.addEventListener('click', () => { 
+    state_descriptivememories = !state_descriptivememories; 
+    if (state_descriptivememories)
+        descriptiveMemories.classList.add("filter-selected");
+    else descriptiveMemories.classList.remove("filter-selected");
+    current_page = 1;
+    search(); 
+});
+
+analysis.addEventListener('click', () => { 
+    state_analysis = !state_analysis; 
+    if (state_analysis)
+        analysis.classList.add("filter-selected");
+    else analysis.classList.remove("filter-selected");
+    current_page = 1;
+    search(); 
+});
+
+interpretation.addEventListener('click', () => { 
+    state_interpretation = !state_interpretation; 
+    if (state_interpretation)
+        interpretation.classList.add("filter-selected");
+    else interpretation.classList.remove("filter-selected");
+    current_page = 1;
+    search(); 
+});
+
+
 
 title.addEventListener('click', () => { 
     state_title = !state_title; state_stars = false; state_releases = false; state_last_updated = false; 
@@ -254,10 +319,17 @@ let state_paper = false;
 let state_web = false;
 let state_ontology = false;
 
+let state_experienceanddata = false;
+let state_symbolicstructure = false;
+let state_descriptivememories = false;
+let state_analysis = false;
+let state_interpretation = false;
+
 let state_title = false;
 let state_stars = false;
 let state_releases = false;
 let state_last_updated = false;
+let state_dataset = false; 
 
 // Search engine
 function search() {
@@ -277,11 +349,17 @@ function search() {
                 && ((state_notebook)? card.hasExecutableNotebook : true)
                 && ((state_paper)? card.paper : true)
                 && ((state_ontology)? card.isOntology : true)
+                && ((state_experienceanddata)? card.experienceAndData : true)
+                && ((state_symbolicstructure)? card.symbolicStructure : true)
+                && ((state_descriptivememories)? card.descriptiveMemories : true)
+                && ((state_analysis)? card.analysis : true)
+                && ((state_interpretation)? card.interpretation : true)
                 && ((state_web)? card.isWeb : true)
                 && ((state_requirements)? card.requirement : true)
                 && ((state_usage)? card.usage : true)
                 && ((state_help)? card.help : true)
                 && ((state_installation)? card.installation : true)
+               // && ((state_dataset)? card.isDataset : true)
                 )
             &&
                 (
