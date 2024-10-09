@@ -1,0 +1,274 @@
+@prefix ns1: <https://w3id.org/okn/o/sd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix mh: <http://www.w3id.org/muhai/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+mh:Analysis rdfs:subClassOf prov:Activity .
+mh:Interpretation rdfs:subClassOf prov:Activity . 
+mh:ExperienceAndData rdfs:subClassOf prov:Entity . 
+mh:SymbolicStructure rdfs:subClassOf prov:Entity . 
+mh:DescriptiveMemory rdfs:subClassOf prov:Entity . 
+
+
+<https://w3id.org/okn/i/Software/art-network> a ns1:Software ;
+    a prov:SoftwareAgent . 
+
+mh:art-network-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/art-network> ; 
+    prov:used <https://w3id.org/okn/i/Software/fluid-construction-grammar> ;
+    a prov:Activity ; 
+    a mh:Interpretation . 
+
+
+<https://w3id.org/okn/i/Software/babel> a ns1:Software ;
+    a prov:SoftwareAgent ;
+    ns1:hasPart <https://w3id.org/okn/i/Software/recipe-understanding-system> ;
+    ns1:hasPart <https://w3id.org/okn/i/Software/semantic-frame-extractor> ;
+    ns1:hasPart <https://w3id.org/okn/i/Software/fluid-construction-grammar> ;
+    ns1:hasPart <https://w3id.org/okn/i/Software/benchmark-evaluation-scripts> ;
+    ns1:hasPart <https://w3id.org/okn/i/Software/nesy-procedural-semantics-for-visual-dialogue> . 
+
+
+ <https://w3id.org/okn/i/Software/recipe-understanding-system> a ns1:Software ;
+    prov:compatibleVisualizationSoftware <https://w3id.org/okn/i/Software/fcg-editor> ;
+    a prov:SoftwareAgent . 
+
+mh:recipe-understanding-system-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/recipe-understanding-system> ;
+    a prov:Activity ; 
+    prov:used <https://w3id.org/okn/i/Software/abe_sim> ; 
+    prov:used <https://w3id.org/okn/i/Software/fluid-construction-grammar> ;
+    prov:used <https://w3id.org/okn/i/Software/soma> ; 
+    a mh:Analysis . 
+
+<https://w3id.org/okn/i/Software/semantic-frame-extractor> a ns1:Software ;
+    a prov:SoftwareAgent . 
+
+
+mh:semantic-frame-extractor-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/semantic-frame-extractor> ;
+    a prov:Activity ; 
+    prov:used <https://w3id.org/okn/i/Software/fluid-construction-grammar> ;
+    a mh:Analysis . 
+
+ <https://w3id.org/okn/i/Software/fluid-construction-grammar> a mh:Model ;
+    a mh:SymbolicStructure . 
+
+ mh:fluid-construction-grammar-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/fluid-construction-grammar> ;
+    a prov:Activity ; 
+    a mh:Analysis .
+
+
+ <https://w3id.org/okn/i/Software/benchmark-evaluation-scripts> a ns1:Software ;
+    a prov:SoftwareAgent . 
+
+
+ mh:benchmark-evaluation-scripts-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/benchmark-evaluation-scripts>;
+    a prov:Activity ; 
+    a mh:Interpretation ;
+    prov:used <https://w3id.org/okn/i/Software/soma> ;
+    prov:wasGeneratedBy mh:recipe-understanding-system-activity . 
+
+ <https://w3id.org/okn/i/Software/nesy-procedural-semantics-for-visual-dialogue> a ns1:Software ;
+    a prov:SoftwareAgent . 
+
+mh:nesy-procedural-semantics-for-visual-dialogue-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/nesy-procedural-semantics-for-visual-dialogue>; 
+    a prov:Activity ; 
+    a mh:Interpretation ;
+    prov:used <https://w3id.org/okn/i/Software/fluid-construction-grammar> . 
+
+<https://w3id.org/okn/i/Software/fcg-editor> a ns1:Software ;
+    a prov:SoftwareAgent . 
+
+mh:fcg-editor-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/fcg-editor>;
+    a prov:Activity ; 
+    a mh:Analysis ;
+    prov:used <https://w3id.org/okn/i/Software/fluid-construction-grammar> . 
+
+<https://w3id.org/okn/i/Software/fcg-hybrids> a ns1:Software ;
+    a prov:SoftwareAgent . 
+
+mh:fcg-hybrids-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/fcg-hybrids> ;
+    a prov:Activity ; 
+    prov:used <https://w3id.org/okn/i/Software/fluid-construction-grammar> ;
+    a mh:Analysis . 
+
+
+<https://w3id.org/okn/i/Software/french_rev_narratives_code> a ns1:Software ;
+    a prov:SoftwareAgent . 
+
+mh:french_rev_narratives_code-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/french_rev_narratives_code> ;
+    a prov:Activity ; 
+    a mh:Interpretation . 
+
+
+<https://w3id.org/okn/i/Software/french_rev_narratives_model> a mh:DescriptiveMemories;
+    a mh:Model ;
+    a prov:Entity ;
+    prov:wasDerivedFrom <http://www.wikidata.org/wiki/Q2013> ;
+    prov:wasGeneratedBy <https://w3id.org/okn/i/Software/french_rev_narratives_code> .
+
+<https://w3id.org/okn/i/Software/marl_language_games> a ns1:Software ;
+    a prov:SoftwareAgent . 
+
+mh:marl_language_games-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/marl_language_games> ;
+    a prov:Activity ; 
+    a mh:Interpretation . 
+
+<https://w3id.org/okn/i/Software/mira-editor> a ns1:Software ;
+    a prov:SoftwareAgent . 
+
+mh:mira-editor-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/mira-editor> ;
+    a prov:Activity ; 
+    a mh:Interpretation ;
+    prov:used <https://w3id.org/mira/ontology/> ;
+    prov:used <https://w3id.org/okn/i/Software/mira-kg> . 
+
+
+<https://w3id.org/okn/i/Software/mira-kg> a mh:DescriptiveMemories;
+    prov:wasDerivedFrom <https://w3id.org/mira/ontology/> ;
+    prov:wasGeneratedBy mh:mira-activity ;
+    a mh:Model ;
+    a prov:Entity .  
+
+<https://w3id.org/okn/i/Software/mira> a ns1:Software ;
+    a prov:SoftwareAgent . 
+
+mh:mira-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/mira> ;
+    a prov:Activity ; 
+    a mh:Interpretation ;
+    prov:used <https://w3id.org/mira/ontology/> . 
+
+<https://w3id.org/okn/i/Software/okg_visualisation> a ns1:Software ;
+    a prov:SoftwareAgent . 
+
+<https://w3id.org/okn/i/Software/PICO-frameExtraction> a ns1:Software ;
+    a prov:SoftwareAgent . 
+
+mh:pico-frameextractor-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/PICO-frameExtraction> ;
+    a prov:Activity ; 
+    prov:used <https://w3id.org/okn/i/Software/fluid-construction-grammar> ;
+    prov:used <https://w3id.org/okn/i/Software/semantic-frame-extractor> ;
+    a mh:Analysis . 
+
+
+<https://w3id.org/okn/i/Software/recipe-execution-benchmark> a mh:ExperienceAndData;
+    a mh:DataSet ;
+    mh:benchmarks <https://w3id.org/okn/i/Software/recipe-understanding-system> ;
+    a prov:Entity .  
+
+<https://w3id.org/okn/i/Software/llm-kg-benchmark> a mh:ExperienceAndData;
+    a mh:DataSet ;
+    ns1:hasPart <https://doi.org/10.5281/zenodo.7119019> ;
+    ns1:hasPart <https://doi.org/10.5281/zenodo.7118556> ;
+    ns1:hasPart <https://doi.org/10.5281/zenodo.7118556> ;
+    a prov:Entity .  
+
+<http://www.wikidata.org/wiki/Q2013> a mh:ExternalDataSet .
+<https://im2recipe.csail.mit.edu/> a mh:ExternalDataSet .
+<http://purl.obolibrary.org/obo/foodon.owl> a mh:ExternalDataset .
+
+<https://doi.org/10.5281/zenodo.7119019> a mh:ExperienceAndData ; 
+    a mh:DataSet ; 
+    a prov:Entity . 
+
+<https://doi.org/10.5281/zenodo.7118556> a mh:ExperienceAndData ; 
+    a mh:DataSet ; 
+    a prov:Entity . 
+
+<https://doi.org/10.5281/zenodo.7118556> a mh:ExperienceAndData ; 
+    a mh:DataSet ; 
+    a prov:Entity . 
+
+
+<https://w3id.org/okn/i/Software/RePEc_inequality_narratives> a mh:Model ;
+    a prov:Entity .  
+
+<https://w3id.org/okn/i/Software/shared_query_understanding> a ns1:Software ;
+    a prov:SoftwareAgent . 
+
+mh:shared_query_understanding-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/shared_query_understanding> ;
+    a prov:Activity ; 
+    a mh:Interpretation . 
+
+<https://w3id.org/okn/i/Software/soma> a mh:Model ;
+    a mh:SymbolicStructure ;
+    a prov:Entity .  
+
+<https://w3id.org/okn/i/Software/VR-kitchen> a ns1:Software ;
+    a prov:SoftwareAgent . 
+
+mh:vr-kitchen-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/VR-kitchen> ;
+    a prov:Activity ; 
+    a mh:Analysis . 
+
+<https://w3id.org/okn/i/Software/wikipedia_data_social_inequality> a mh:DataSet ;
+    a prov:Entity .  
+
+<https://w3id.org/okn/i/Software/okg> a mh:Model ;
+    a mh:SymbolicStructure ;
+    prov:wasDerivedFrom <https://w3id.org/okn/i/Software/obio> ; 
+    prov:wasDerivedFrom <http://www.wikidata.org/wiki/Q2013> ; 
+    prov:wasGeneratedBy mh:okg_media_discourse-activity ;
+    a prov:Entity .  
+
+<https://w3id.org/okn/i/Software/understanding_ingredient_substitutions_book_chapter_code> a ns1:Software ;
+    a prov:SoftwareAgent ;
+    ns1:compatibleVisualizationSoftware <https://w3id.org/okn/i/Software/VR-kitchen> .
+
+mh:ingredient-substitution-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/understanding_ingredient_substitutions_book_chapter_code> ;
+    a prov:Activity ; 
+    a mh:Analysis ;
+    prov:used <http://purl.obolibrary.org/obo/foodon.owl> ;
+    prov:used <https://im2recipe.csail.mit.edu/> . 
+
+
+<https://w3id.org/okn/i/Software/obio> a mh:Model ;
+    a prov:Entity ;
+    a mh:SymbolicStructure . 
+
+<https://w3id.org/okn/i/Software/okg_media_discourse> a ns1:Software ;
+    a prov:SoftwareAgent . 
+
+mh:okg_media_discourse-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/okg_media_discourse> ; 
+    a prov:Activity ; 
+    a mh:Analysis ;
+    prov:used <https://w3id.org/okn/i/Software/obio> ; 
+    prov:used <https://github.com/propbank/> .
+
+<https://w3id.org/okn/i/Software/HERMIONE> a ns1:Software ;
+    a prov:SoftwareAgent . 
+
+mh:hermione-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/HERMIONE> ;
+    a prov:Activity ; 
+    prov:used <https://w3id.org/okn/i/Software/obio> ;
+    prov:used <http://www.wikidata.org/wiki/Q2013> ; 
+    prov:used <https://w3id.org/okn/i/Software/okg> ;
+    a mh:Interpretation . 
+
+<https://w3id.org/okn/i/Software/chronographer> a ns1:Software ;
+    a prov:SoftwareAgent . 
+
+mh:chronographer-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/chronographer> ;
+    a prov:Activity ; 
+    a mh:Analysis . 
+
+<https://w3id.org/okn/i/Software/abe_sim> a ns1:Software ;
+    a prov:SoftwareAgent ; 
+    prov:compatibleVisualizationSoftware <https://w3id.org/okn/i/Software/VR-kitchen> . 
+
+
+mh:abe_sim-activity prov:wasAssociatedWith <https://w3id.org/okn/i/Software/abe_sim> ;
+    a prov:Activity ; 
+    a mh:Interpretation ;
+    prov:used <https://w3id.org/okn/i/Software/soma> .
+
+ <https://github.com/propbank/> a mh:Model ; 
+    a prov:Entity ; 
+    prov:wasDerivedFrom <https://w3id.org/okn/i/Software/fluid-construction-grammar> ; 
+    a mh:SymbolicStructure . 
+
+<https://w3id.org/mira/ontology/> a mh:Model ; 
+    a prov:Entity ; 
+    a mh:SymbolicStructure . 
