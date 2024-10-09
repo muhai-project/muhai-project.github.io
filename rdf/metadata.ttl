@@ -30,7 +30,6 @@
     ns1:programmingLanguage "Common Lisp",
         "HTML" .
 
-
 <https://w3id.org/okn/i/Software/babel> a ns1:Software ;
     schema:license <https://w3id.org/okn/i/License/babel> ;
     ns1:contributingGuidelines """# How to Contribute
