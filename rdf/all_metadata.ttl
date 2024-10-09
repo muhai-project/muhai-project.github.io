@@ -7,6 +7,7 @@
     schema:name "muhai-project" .
 
 <https://w3id.org/okn/i/Software/art-network> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/art-network> ;
     ns1:dateCreated "2024-04-23T12:24:18+00:00"^^xsd:dateTime ;
     ns1:dateModified "2024-04-23T12:24:18+00:00"^^xsd:dateTime ;
@@ -31,6 +32,7 @@
         "HTML" .
 
 <https://w3id.org/okn/i/Software/babel> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/babel> ;
     ns1:contributingGuidelines """# How to Contribute
 
@@ -268,6 +270,7 @@ If you want the full Babel experience, detailed installation instructions for al
         "XSLT" .
 
 <https://w3id.org/okn/i/Software/fcg-editor> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/fcg-editor> ;
     ns1:citation "10.1371/journal.pone.0269708"^^xsd:anyURI ;
     ns1:dateCreated "2024-09-12T18:39:05+00:00"^^xsd:dateTime ;
@@ -300,6 +303,7 @@ If you want the full Babel experience, detailed installation instructions for al
     ns1:name "muhai-project/fcg-editor" .
 
 <https://w3id.org/okn/i/Software/french_rev_narratives_code> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/french_rev_narratives_code> ;
     ns1:contactDetails "Inès Blin" ;
     ns1:dateCreated "2024-07-22T15:00:05+00:00"^^xsd:dateTime ;
@@ -401,6 +405,7 @@ cd app-demo && streamlit run app.py
         "Shell" .
 
 <https://w3id.org/okn/i/Software/french_rev_narratives_model> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/french_rev_narratives_model> ;
     ns1:contactDetails "Inès Blin" ;
     ns1:dateCreated "2024-09-13T08:16:35+00:00"^^xsd:dateTime ;
@@ -448,6 +453,7 @@ cd french_rev_narratives_model
 
 
 <https://w3id.org/okn/i/Software/marl_language_games> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/marl_language_games> ;
     ns1:citation "10.1093/jole/lzad001"^^xsd:anyURI ;
     ns1:dateCreated "2024-09-12T10:09:07+00:00"^^xsd:dateTime ;
@@ -568,6 +574,7 @@ The `environment.yml` file presents in this repository makes it easy to recreate
         "Python" .
 
 <https://w3id.org/okn/i/Software/mira-editor> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/mira-editor> ;
     ns1:contactDetails """l.stork@uva.nl 
 """ ;
@@ -610,6 +617,7 @@ pip install -r requirements.txt
     ns1:programmingLanguage "Python" .
 
 <https://w3id.org/okn/i/Software/mira-kg> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/mira-kg> ;
     ns1:contactDetails """Lise Stork, l.stork@uva.nl
 """ ;
@@ -738,6 +746,7 @@ An example query is shown below:
 
 
 <https://w3id.org/okn/i/Software/mira> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/mira> ;
     ns1:contactDetails """Lise Stork, l.stork@uva.nl
 """ ;
@@ -826,6 +835,7 @@ pip install -r requirements.txt
         "Python" .
 
 <https://w3id.org/okn/i/Software/okg_visualisation> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/okg_visualisation> ;
     ns1:dateCreated "2024-01-31T13:33:23+00:00"^^xsd:dateTime ;
     ns1:dateModified "2024-01-31T13:33:24+00:00"^^xsd:dateTime ;
@@ -846,6 +856,7 @@ pip install -r requirements.txt
     ns1:name "muhai-project/okg_visualisation" .
 
 <https://w3id.org/okn/i/Software/PICO-frameExtraction> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/PICO-frameExtraction> ;
     ns1:contactDetails """Lise Stork, l.stork@uva.nl
 """ ;
@@ -895,6 +906,7 @@ number 951846.
     ns1:programmingLanguage "Common Lisp" .
 
 <https://w3id.org/okn/i/Software/python-kafka-example> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/python-kafka-example> ;
     ns1:dateCreated "2021-01-19T22:03:26+00:00"^^xsd:dateTime ;
     ns1:dateModified "2021-01-19T23:40:47+00:00"^^xsd:dateTime ;
@@ -954,6 +966,7 @@ This should resolve the error and allow for successful connection to the server.
     ns1:programmingLanguage "Python" .
 
 <https://w3id.org/okn/i/Software/recipe-execution-benchmark> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/recipe-execution-benchmark> ;
     ns1:dateCreated "2024-09-12T19:28:25+00:00"^^xsd:dateTime ;
     ns1:dateModified "2024-09-13T07:28:33+00:00"^^xsd:dateTime ;
@@ -985,6 +998,7 @@ The directory [libs](libs) contains the Python library Smatch, which is required
     ns1:programmingLanguage "Python" .
 
 <https://w3id.org/okn/i/Software/RePEc_inequality_narratives> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/RePEc_inequality_narratives> ;
     ns1:dateCreated "2022-05-25T17:24:01+00:00"^^xsd:dateTime ;
     ns1:dateModified "2022-05-25T17:24:01+00:00"^^xsd:dateTime ;
@@ -1028,6 +1042,7 @@ Our Twitter query was based on the [RePEc economists](https://twitter.com/i/list
     ns1:name "muhai-project/RePEc_inequality_narratives" .
 
 <https://w3id.org/okn/i/Software/shared_query_understanding> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/shared_query_understanding> ;
     ns1:contactDetails "Nikolaos Kondylidis" ;
     ns1:dateCreated "2023-09-15T14:06:39+00:00"^^xsd:dateTime ;
@@ -1116,6 +1131,7 @@ v) Create Instance Alignments for extended dataset experiments.
     ns1:programmingLanguage "Python" .
 
 <https://w3id.org/okn/i/Software/soma> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/soma> ;
     ns1:dateCreated "2022-02-16T13:25:35+00:00"^^xsd:dateTime ;
     ns1:dateModified "2022-04-12T08:43:43+00:00"^^xsd:dateTime ;
@@ -1155,6 +1171,7 @@ Our extensions mainly focus on characterizing different aspects of activities th
         "Shell" .
 
 <https://w3id.org/okn/i/Software/VR-kitchen> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/VR-kitchen> ;
     ns1:contactDetails "Rachel Ringe, rringe@uni-bremen.de" ;
     ns1:dateCreated "2024-09-13T08:22:21+00:00"^^xsd:dateTime ;
@@ -1195,6 +1212,7 @@ The VR enviroment can be used to run user studies on Human-Robot-Collaboration i
     ns1:name "muhai-project/VR-kitchen" .
 
 <https://w3id.org/okn/i/Software/wikipedia_data_social_inequality> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/wikipedia_data_social_inequality> ;
     ns1:dateCreated "2022-05-24T12:10:41+00:00"^^xsd:dateTime ;
     ns1:dateModified "2022-05-24T12:42:36+00:00"^^xsd:dateTime ;
@@ -1233,6 +1251,7 @@ The VR enviroment can be used to run user studies on Human-Robot-Collaboration i
     ns1:programmingLanguage "R" .
 
 <https://w3id.org/okn/i/Software/okg> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/okg> ;
     ns1:contactDetails "Inès Blin" ;
     ns1:dateCreated "2024-07-22T14:34:17+00:00"^^xsd:dateTime ;
@@ -1262,6 +1281,7 @@ The VR enviroment can be used to run user studies on Human-Robot-Collaboration i
     ns1:name "muhai-project/okg" .
 
 <https://w3id.org/okn/i/Software/understanding_ingredient_substitutions_book_chapter_code> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/understanding_ingredient_substitutions_book_chapter_code> ;
     ns1:contactDetails """Nikolaos Kondylidis
 """ ;
@@ -1305,6 +1325,7 @@ The experimental setup uses this produced grounded version of Recipe1MSubs, to t
         "Shell" .
 
 <https://w3id.org/okn/i/Software/obio> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/obio> ;
     ns1:contactDetails "Inès Blin" ;
     ns1:dateCreated "2024-07-22T14:27:20+00:00"^^xsd:dateTime ;
@@ -1336,6 +1357,7 @@ The experimental setup uses this produced grounded version of Recipe1MSubs, to t
     ns1:name "muhai-project/obio" .
 
 <https://w3id.org/okn/i/Software/okg_media_discourse> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/okg_media_discourse> ;
     ns1:contactDetails "Inès Blin" ;
     ns1:dateCreated "2023-08-23T13:30:41+00:00"^^xsd:dateTime ;
@@ -1489,6 +1511,7 @@ python src/main.py -f <input-event-folder-csv-file> -o <output-folder>
         "Shell" .
 
 <https://w3id.org/okn/i/Software/HERMIONE> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/HERMIONE> ;
     ns1:dateCreated "2024-07-24T07:39:39+00:00"^^xsd:dateTime ;
     ns1:dateModified "2024-07-24T07:43:10+00:00"^^xsd:dateTime ;
@@ -1609,6 +1632,7 @@ docker build . -t hermione
         "R" .
 
 <https://w3id.org/okn/i/Software/chronographer> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
     schema:license <https://w3id.org/okn/i/License/chronographer> ;
     ns1:contactDetails "Inès Blin" ;
     ns1:dateCreated "2024-07-22T14:39:09+00:00"^^xsd:dateTime ;
@@ -1721,4 +1745,122 @@ We propose 3 notebooks in the `notebooks` folder to extract additional data to r
     ns1:programmingLanguage "Jupyter Notebook",
         "Python",
         "Shell" .
+
+
+<https://w3id.org/okn/i/Software/abe_sim> a ns1:Software ;
+    ns1:author <https://w3id.org/okn/i/Agent/muhai-project> ;
+    schema:license <https://w3id.org/okn/i/License/abe_sim> ;
+    ns1:citation "https://aclanthology.org/2024.lrec-main.3"^^xsd:anyURI ;
+    ns1:contactDetails "Mihai Pomarlan: mpomarlan@yahoo.co.uk" ;
+    ns1:dateCreated "2024-10-07T09:18:03+00:00"^^xsd:dateTime ;
+    ns1:dateModified "2024-10-08T05:28:47+00:00"^^xsd:dateTime ;
+    ns1:description "17-01-2021",
+        "A little agent simulation in MORSE, to be used in a MUHAI pipeline to evaluate semspecs.",
+        "A little agent simulation in PyBullet, to be used in a MUHAI pipeline to evaluate semspecs. (Very much a work in progress now.)",
+        """Assuming you use a GUI, you should see the simulated environment appear in a PyBullet window; pressing g while this window is selected toggles the side panels. 
+At this point the simulated agent is ready to receive commands via HTTP POST requests. Have a look at the wiki for which commands are available and what arguments they take; the flaskTests.py also contains examples on how to call most of the available commands.
+ 
+""",
+        """Build file(s) to create a Docker image for the target software 
+""",
+        """If the repository is a short name, we will attempt to extract the longer version of the repository name 
+""",
+        """Link to the code of conduct of the project 
+""",
+        """Links to package sites like pypi in case the repository has a package available. 
+""",
+        """Pointer to the available versions of a software component. For each release, somef will track its description, author, name, date of publication, date of creation, the link to the html page of the release, the id of the release and a link to the tarball zip and code of the release 
+""",
+        """Repository status as it is described in repostatus.org. 
+""",
+        """Text indicating how to contribute to this code repository 
+""",
+        """Total number of stargazers of the project 
+""",
+        """URL and path to the ontology files present in the repository, e.g., https://w3id.org/mira/ontology/ 
+""",
+        """URL and path to the workflow files present in the repository
+ 
+""" ;
+    ns1:hasAcknowledgments "This work was funded by the European MUHAI project (Horizon 2020 research and innovation program) under grant agreement number 951846. We thank Katrin Beuls, Paul van Eecke, Jens Nevens, Luc Steels, Robert Porzel for the insightful discussions that contributed to this work." ;
+    ns1:hasDocumentation "https://github.com/mpomarlan/abe_sim/wiki"^^xsd:anyURI ;
+    ns1:hasDownloadUrl "https://github.com/muhai-project/abe_sim/releases"^^xsd:anyURI ;
+    ns1:hasFAQ "Frequently asked questions about a software component" ;
+    ns1:hasInstallationInstructions """Links to package sites like pypi in case the repository has a package available. 
+""",
+        """Once you have installed pybullet and any other dependecies, and cloned the repository, you can go to the src subfolder and run
+```
+python runBrain.py -h
+```
+will print out a help message about command line parameters. To run the default scene with a GUI at the highest quality setting recommended for your OS, run
+```
+python runBrain.py -g
+```
+If instead you wish to run the scene without any graphics rendering, use
+```
+python runBrain.py
+```
+ 
+Assuming you use a GUI, you should see the simulated environment appear in a PyBullet window; pressing g while this window is selected toggles the side panels. 
+""",
+        """URL and path to the ontology files present in the repository, e.g., https://w3id.org/mira/ontology/ 
+""",
+        """https://github.com/muhai-project 
+""" ;
+    ns1:hasLongName "Acknowledgement:" ;
+    ns1:hasSourceCode <https://w3id.org/okn/i/SoftwareSource/abe_sim> ;
+    ns1:hasUsageNotes """##Executable examples:
+Jupyter notebooks ready for execution (e.g., files, or through myBinder/colab links)##Usage examples:
+Assumptions and considerations recorded by the authors when executing a software component, or examples on how to use it""" ;
+    ns1:issueTracker "https://api.github.com/repos/muhai-project/abe_sim/issues"^^xsd:anyURI ;
+    ns1:name "muhai-project/abe_sim" ;
+    ns1:readme "https://raw.githubusercontent.com/muhai-project/abe_sim/main/README.md"^^xsd:anyURI ;
+    ns1:referencePublication "https://aclanthology.org/2024.lrec-main.3"^^xsd:anyURI ;
+    ns1:softwareRequirements """- flask
+- numpy
+- pybullet
+- pyyaml
+- requests
+- sparqlwrapper""",
+        """Python version 3.4 or newer is required.
+
+To try the current stuff out, you will first need to [install PyBullet ](https://www.openrobots.org/morse/doc/stable/user/installation.html). For example, assuming you have pip3 as a command to install packages for a python3.4 or newer distribution, you can run:
+
+```
+sudo pip3 install pybullet
+```
+
+Installing pybullet will involve compiling the bullet library and, depending on your OS, have various dependencies. If you already do C/C++ development it is likely you have those installed already. If error messages appear during the pip install, it may be worth searching online for guides about installing pybullet. A few such guides are listed below:
+
+- Windows: [Deepak Jogi: How to install PyBullet in Windows](https://deepakjogi.medium.com/how-to-install-pybullet-physics-simulation-in-windows-e1f16baa26f6)
+- Linux: [GeeksForGeeks: How to install PyBullet in Linux](https://www.geeksforgeeks.org/how-to-install-pybullet-package-in-python-on-linux/)
+- MacOS: todo
+
+A note on running PyBullet on MacOS: we have gotten it to run fairly reliably. However, some python support is rudimentary on newer M1 chips. Proceed with lowered expectations.
+
+Other abe_sim dependencies are python packages that are often already installed or, in any case, of lower installation complexity:
+
+- flask
+- numpy
+- pyyaml
+- requests
+- sparqlwrapper
+""" ;
+    ns1:supportDetails "Guidelines and links of where to obtain support for a software component",
+        "Help channels one can use to get support about the target software component" .
+
+<https://w3id.org/okn/i/License/abe_sim> a schema:CreativeWork ;
+    owl:sameAs <https://spdx.org/licenses/BSD-2-Clause> ;
+    ns1:name "BSD 2-Clause \"Simplified\" License" ;
+    ns1:url "https://raw.githubusercontent.com/muhai-project/abe_sim/main/LICENSE"^^xsd:anyURI .
+
+<https://w3id.org/okn/i/SoftwareSource/abe_sim> a schema:SoftwareSourceCode ;
+    ns1:codeRepository "https://github.com/muhai-project/abe_sim"^^xsd:anyURI ;
+    ns1:name "muhai-project/abe_sim" ;
+    ns1:programmingLanguage "Batchfile",
+        "Common Lisp",
+        "PDDL",
+        "Python" .
+
+
 
